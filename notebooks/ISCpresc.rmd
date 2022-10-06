@@ -96,9 +96,10 @@ annotation <- data.frame(
 h_line <- 4059
 
 ggplot(data=Abemaciclib_data3, aes(x=Year, y=People)) +
-    geom_line(stat='identity',color="darkblue", fill="lightblue") +
+    geom_line(stat='identity',color="darkblue", fill= "#228096", size = 0.8) +
     geom_hline(yintercept = h_line) +
     geom_text(aes(2020, h_line, label = "Expected usage", vjust = -1)) +
+    geom_point(fill= "#228096", size = 2) +
     ylim(0, 5000) +
     xlim(2018,2021)+
     theme_minimal() +

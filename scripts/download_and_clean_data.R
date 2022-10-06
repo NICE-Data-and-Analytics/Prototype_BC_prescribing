@@ -27,7 +27,7 @@ clean_df <- national_df %>%
     summarise(numerator = sum(numerator),
               denominator = first(denominator),
               value = numerator/(denominator/100000)) %>% 
-    # Add ungroup to make sure it inst saved as a grouped table, which can cause issues when graphing
+    # Add ungroup to make sure the modified table isn't saved as a grouped table. This can cause issues when graphing
     ungroup() %>% 
     # Calculate people and people per 100,000 population
     mutate(people = numerator/91,
@@ -58,7 +58,7 @@ clean_df %>%
     ggplot(aes(x = date, y = people)) +
     geom_line(color = "#228096", size = 1) +
     geom_point(size = 2, color = "#228096") +
+    geom_vline(xintercept = lubridate::make_date("2019", "02", "27"), 
+               linetype = "dashed", 
+               colour = "black", size = 0.6)+
     theme_minimal()
-
-test <- national_df %>% 
-            filter(str_detect(treatment_name, "abemaciclib"))
