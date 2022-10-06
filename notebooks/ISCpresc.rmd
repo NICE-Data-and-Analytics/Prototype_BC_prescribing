@@ -10,36 +10,79 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(tidyverse)
 library(reactable)
 
+# prevents data loading in with numbers in scientific format
+options(scipen=999)
+
 ```
 
 
-The following document sets out the observed and expected usage of the breast cancer medicines abemaciclib and neratinib. These medicines were selected as we have access to both primary and secondary care prescribing data and they are largely prescribed for an identifiable cohort of patients where we can estimate expected usage.
+The following document sets out the observed and expected usage of the breast cancer medicines abemaciclib and neratinib. These medicines were selected as we have access to both primary and secondary care prescribing data and they are largely prescribed for an identifiable cohort of patients where we can estimate expected usage.  
 
 # Abemaciclib
 
-## Therapeutic indications 
+## Relevant guidance
 
-### Early Breast Cancer
+Abemaciclib, sold under the brand name Verzenios, was first recommended as a treatment for breast cancer in 2019, following publication of a NICE Technology appraisal (TA563). Since then, we have published two further Technology appraisals recommending abemiciclib for additional breast cancer indications. Details of currently published technology appraisals are included in the table below. 
 
-Verzenios in combination with endocrine therapy is indicated for the adjuvant treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, node-positive early breast cancer at high risk of recurrence.
-
-In pre- or perimenopausal women, aromatase inhibitor endocrine therapy should be combined with a luteinising hormone-releasing hormone (LHRH) agonist.
-
-### Advanced or Metastatic Breast Cancer
-
-Verzenios is indicated for the treatment of women with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative locally advanced or metastatic breast cancer in combination with an aromatase inhibitor or fulvestrant as initial endocrine-based therapy, or in women who have received prior endocrine therapy.
-In pre- or perimenopausal women, the endocrine therapy should be combined with a LHRH agonist.
-
+<br>
 
 ```{r}
 
 Abemaciclib_table3<- read_csv(here::here("data/Abemaciclib_table3.csv"))
 
-reactable(Abemaciclib_table3)
+reactable(Abemaciclib_table3, 
+          columns = list(Title = colDef(minWidth = 400)))
 
 ```
 
-The observed usage of abemaciclib has increased since it was first authorised in 2018. In 2021 it was approaching the estimated expected level of prescribing.
+## Therapeutic indications  
+
+### Early Breast Cancer  
+
+Abemiciclib in combination with endocrine therapy is indicated for the adjuvant treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, node-positive early breast cancer at high risk of recurrence.  
+
+In pre- or perimenopausal women, aromatase inhibitor endocrine therapy should be combined with a luteinising hormone-releasing hormone (LHRH) agonist.  
+
+### Advanced or Metastatic Breast Cancer  
+
+Abemiciclib is indicated for the treatment of women with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative locally advanced or metastatic breast cancer in combination with an aromatase inhibitor or fulvestrant as initial endocrine-based therapy, or in women who have received prior endocrine therapy.
+In pre- or perimenopausal women, the endocrine therapy should be combined with a LHRH agonist.  
+
+<br>
+
+## Eligible population  
+
+Around 4,000 people are expected to receive treatment with abemaciclib in England annually.  
+
+This has been taken from the Resource impact template developed for the NICE technology appraisal 'Abemaciclib with endocrine therapy for adjuvant treatment of hormone receptor-positive, HER2-negative, node-positive early breast cancer at high risk of recurrence', published July 2022.  
+
+<br>
+
+```{r}
+
+Abemaciclib_table1<- read_csv(here::here("data/Abemaciclib_table1.csv"))
+
+reactable(Abemaciclib_table1)
+
+```
+
+<br>
+
+## Observed usage  
+
+The table below is taken from data in the April 2022 publication of the innovation scorecard. It shows secondary care prescribing data by quarter in England for abemaciclib, also includes the very small amount of primary care data observed in the period.  
+
+```{r}
+
+Abemaciclib_table2<- read_csv(here::here("data/Abemaciclib_table2.csv"))
+
+reactable(Abemaciclib_table2)
+
+```
+
+<br>
+
+The observed usage of abemaciclib has increased since it was first authorized in 2018. In 2021 it was approaching the estimated expected level of prescribing.  
 
 ```{r}
 
@@ -65,31 +108,4 @@ ggplot(data=Abemaciclib_data3, aes(x=Year, y=People)) +
            size=4 , angle=0, fontface="bold")
 
 ```
-
-## Eligible population 
-
-Around 4,000 people are expected to receive treatment with abemaciclib in England annually.
-
-This has been taken from the Resource impact template developed for the NICE technology appraisal 'Abemaciclib with endocrine therapy for adjuvant treatment of hormone receptor-positive, HER2-negative, node-positive early breast cancer at high risk of recurrencedor', published July 2022. 
-
-```{r}
-
-Abemaciclib_table1<- read_csv(here::here("data/Abemaciclib_table1.csv"))
-
-reactable(Abemaciclib_table1)
-
-```
-
-## Observed usage
-
-The table below is taken from data in the April 2022 publication of the innovation scorecard. It shoes secondary care prescribing data by quarter in England for abemaciclib, also includes the very small amount of primary care data observed in the period. 
-
-```{r}
-
-Abemaciclib_table2<- read_csv(here::here("data/Abemaciclib_table2.csv"))
-
-reactable(Abemaciclib_table2)
-
-```
-
 
