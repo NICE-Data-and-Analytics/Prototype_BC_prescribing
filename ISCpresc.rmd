@@ -21,7 +21,7 @@ library(reactable)
 The following document sets out the observed and expected usage of the breast 
 cancer medicines abemaciclib and neratinib. These medicines were selected as 
 we have access to both primary and secondary care prescribing data and they are 
-largely prescribed for an idendifiable cohort of patients where we can estimate 
+largely prescribed for an identifiable cohort of patients where we can estimate 
 expected usage. 
 
 ```
@@ -37,7 +37,7 @@ in 2018. In 2021 it was approaching the estimated expected level of prescribing.
 
 
 ```{r}
-Abemaciclib_data3 <- read.csv ("C:\\R_Projects\\myrepo\\Abemaciclib3.csv")
+Abemaciclib_data3 <- read.csv ("./Abemaciclib3.csv")
 annotation <- data.frame(
    x = c(2019,2020.5, 2021),
    y = c(750,750,750),
