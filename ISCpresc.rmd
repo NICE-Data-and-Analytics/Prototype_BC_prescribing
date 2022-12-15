@@ -51,7 +51,7 @@ ggplot(data=Abemaciclib_data3, aes(x=Year, y=People)) +
     xlim(2018,2021)+
     theme_minimal() +
     labs(title = "Abemaciclib primary and secondary care prescribing, England, 2018-2021") +
-    geom_text(data=annotation, aes( x=x, y=y, label=label),                 , 
+    geom_text(data=annotation, aes( x=x, y=y, label=label),                 
            color="orange", 
            size=4 , angle=0, fontface="bold" )
 
