@@ -1,7 +1,13 @@
 ---
-title: "Breast cancer prescribing"
-output: html_document
-
+title: "Prototype measurement framework: Prescribing of Breast cancer medicines"
+author: "Impact team"
+date: "December 2022"
+output: 
+  html_document:
+    code_folding: hide
+    toc: true
+    toc_depth: 3
+    toc_float: true
 ---
 
 ```{r setup, include=FALSE}
@@ -46,7 +52,7 @@ In pre- or perimenopausal women, aromatase inhibitor endocrine therapy should be
 ### Advanced or Metastatic Breast Cancer  
 
 Abemiciclib is indicated for the treatment of women with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative locally advanced or metastatic breast cancer in combination with an aromatase inhibitor or fulvestrant as initial endocrine-based therapy, or in women who have received prior endocrine therapy.
-In pre- or perimenopausal women, the endocrine therapy should be combined with a LHRH agonist.  
+In pre- or perimenopausal women, the endocrine therapy should be combined with a LHRH agonist.
 
 <br>
 

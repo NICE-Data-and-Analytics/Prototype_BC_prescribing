@@ -47,7 +47,7 @@ clean_df <- national_df %>%
            date = lubridate::make_date(year, quarter, "1")) %>% 
     # remove the columns we dont need and move date to start
     select(-c(year, quarter)) %>% 
-    select(date, everything())
+    select(date, everything()) 
 
 
 # Make chart --------------------------------------------------------------

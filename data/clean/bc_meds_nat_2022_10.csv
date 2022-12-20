@@ -1,0 +1,148 @@
+date,data_source,treatment_name,numerator,numerator_unit,denominator,denominator_unit
+2018-03-01,Secondary Care,abemaciclib,180,ADD,56550138,Population
+2018-06-01,Secondary Care,abemaciclib,300,ADD,56550138,Population
+2018-09-01,Secondary Care,abemaciclib,450,ADD,56550138,Population
+2018-12-01,Secondary Care,abemaciclib,1140,ADD,56550138,Population
+2019-03-01,Secondary Care,abemaciclib,7642,ADD,56550138,Population
+2019-06-01,Secondary Care,abemaciclib,25984,ADD,56550138,Population
+2019-09-01,Secondary Care,abemaciclib,53582.5,ADD,56550138,Population
+2019-12-01,Secondary Care,abemaciclib,74855.5,ADD,56550138,Population
+2020-03-01,Primary Care,abemaciclib,1,ADD,56550138,Population
+2020-03-01,Secondary Care,abemaciclib,77659.5,ADD,56550138,Population
+2020-06-01,Secondary Care,abemaciclib,72372,ADD,56550138,Population
+2020-09-01,Secondary Care,abemaciclib,72834.5,ADD,56550138,Population
+2020-12-01,Secondary Care,abemaciclib,77856.5,ADD,56550138,Population
+2021-03-01,Secondary Care,abemaciclib,76446.5,ADD,56550138,Population
+2021-06-01,Secondary Care,abemaciclib,75869,ADD,56550138,Population
+2021-09-01,Secondary Care,abemaciclib,77360,ADD,56550138,Population
+2021-12-01,Secondary Care,abemaciclib,82664.5,ADD,56550138,Population
+2022-03-01,Secondary Care,abemaciclib,84060,ADD,56550138,Population
+2022-06-01,Secondary Care,abemaciclib,91257.5,ADD,56550138,Population
+2017-09-01,Secondary Care,neratinib,1155,ADD,56550138,Population
+2017-12-01,Secondary Care,neratinib,2121,ADD,56550138,Population
+2018-03-01,Secondary Care,neratinib,2389.5,ADD,56550138,Population
+2018-06-01,Secondary Care,neratinib,1934,ADD,56550138,Population
+2018-09-01,Secondary Care,neratinib,2609,ADD,56550138,Population
+2018-12-01,Secondary Care,neratinib,3377.3333333333335,ADD,56550138,Population
+2019-03-01,Secondary Care,neratinib,2703.6666666666665,ADD,56550138,Population
+2019-06-01,Secondary Care,neratinib,2637,ADD,56550138,Population
+2019-09-01,Secondary Care,neratinib,3387,ADD,56550138,Population
+2019-12-01,Secondary Care,neratinib,4442,ADD,56550138,Population
+2020-03-01,Secondary Care,neratinib,8446.5,ADD,56550138,Population
+2020-06-01,Secondary Care,neratinib,11254.5,ADD,56550138,Population
+2020-09-01,Secondary Care,neratinib,16402.166666666668,ADD,56550138,Population
+2020-12-01,Secondary Care,neratinib,24446.833333333332,ADD,56550138,Population
+2021-03-01,Secondary Care,neratinib,21649.333333333332,ADD,56550138,Population
+2021-06-01,Secondary Care,neratinib,21792.166666666668,ADD,56550138,Population
+2021-09-01,Secondary Care,neratinib,18615.833333333332,ADD,56550138,Population
+2021-12-01,Secondary Care,neratinib,14883.833333333334,ADD,56550138,Population
+2022-03-01,Secondary Care,neratinib,12027.833333333334,ADD,56550138,Population
+2022-06-01,Secondary Care,neratinib,10684,ADD,56550138,Population
+2017-09-01,Secondary Care,palbociclib,45005.851064,DDD,56550138,Population
+2017-12-01,Secondary Care,palbociclib,68430.053191,DDD,56550138,Population
+2018-03-01,Secondary Care,palbociclib,101834.84043,DDD,56550138,Population
+2018-06-01,Secondary Care,palbociclib,121176.8617,DDD,56550138,Population
+2018-09-01,Secondary Care,palbociclib,145701.8617,DDD,56550138,Population
+2018-12-01,Secondary Care,palbociclib,166818.08511000001,DDD,56550138,Population
+2019-03-01,Primary Care,palbociclib,27.925531915,DDD,56550138,Population
+2019-03-01,Secondary Care,palbociclib,189286.43617,DDD,56550138,Population
+2019-06-01,Secondary Care,palbociclib,209334.04255,DDD,56550138,Population
+2019-09-01,Secondary Care,palbociclib,229315.15957,DDD,56550138,Population
+2019-12-01,Secondary Care,palbociclib,248087.5,DDD,56550138,Population
+2020-03-01,Secondary Care,palbociclib,277164.09574,DDD,56550138,Population
+2020-06-01,Secondary Care,palbociclib,245735.10638,DDD,56550138,Population
+2020-09-01,Secondary Care,palbociclib,293023.1383,DDD,56550138,Population
+2020-12-01,Secondary Care,palbociclib,327626.32979,DDD,56550138,Population
+2021-03-01,Secondary Care,palbociclib,341464.3617,DDD,56550138,Population
+2021-06-01,Secondary Care,palbociclib,367317.28723,DDD,56550138,Population
+2021-09-01,Secondary Care,palbociclib,382920.21277,DDD,56550138,Population
+2021-12-01,Primary Care,palbociclib,8.5106382979,DDD,56550138,Population
+2021-12-01,Secondary Care,palbociclib,400977.92553,DDD,56550138,Population
+2022-03-01,Secondary Care,palbociclib,399420.74468,DDD,56550138,Population
+2022-06-01,Secondary Care,palbociclib,405616.48936,DDD,56550138,Population
+2017-09-01,Secondary Care,pembrolizumab,1324486.815,mgs,56550138,Population
+2017-12-01,Secondary Care,pembrolizumab,1795439.09,mgs,56550138,Population
+2018-03-01,Secondary Care,pembrolizumab,2107137.35,mgs,56550138,Population
+2018-06-01,Secondary Care,pembrolizumab,2253515,mgs,56550138,Population
+2018-09-01,Secondary Care,pembrolizumab,2235732.495,mgs,56550138,Population
+2018-12-01,Secondary Care,pembrolizumab,2378834.31,mgs,56550138,Population
+2019-03-01,Secondary Care,pembrolizumab,2676225.035,mgs,56550138,Population
+2019-06-01,Secondary Care,pembrolizumab,2753463.35,mgs,56550138,Population
+2019-09-01,Secondary Care,pembrolizumab,3236492.155,mgs,56550138,Population
+2019-12-01,Secondary Care,pembrolizumab,3395468.81,mgs,56550138,Population
+2020-03-01,Secondary Care,pembrolizumab,3554384.42,mgs,56550138,Population
+2020-06-01,Secondary Care,pembrolizumab,3332336,mgs,56550138,Population
+2020-09-01,Secondary Care,pembrolizumab,3721140,mgs,56550138,Population
+2020-12-01,Secondary Care,pembrolizumab,4002136,mgs,56550138,Population
+2021-03-01,Secondary Care,pembrolizumab,5543424,mgs,56550138,Population
+2021-06-01,Secondary Care,pembrolizumab,4733390,mgs,56550138,Population
+2021-09-01,Secondary Care,pembrolizumab,4417295.04,mgs,56550138,Population
+2021-12-01,Secondary Care,pembrolizumab,4396534.94,mgs,56550138,Population
+2022-03-01,Secondary Care,pembrolizumab,4664000.01,mgs,56550138,Population
+2022-06-01,Secondary Care,pembrolizumab,4534455.01,mgs,56550138,Population
+2017-09-01,Secondary Care,ribociclib,1866.6666666666667,ADD,56550138,Population
+2017-12-01,Secondary Care,ribociclib,3049.3333333333335,ADD,56550138,Population
+2018-03-01,Secondary Care,ribociclib,5629.333333333333,ADD,56550138,Population
+2018-06-01,Secondary Care,ribociclib,7648,ADD,56550138,Population
+2018-09-01,Secondary Care,ribociclib,10476,ADD,56550138,Population
+2018-12-01,Secondary Care,ribociclib,13024,ADD,56550138,Population
+2019-03-01,Secondary Care,ribociclib,16931.11111111111,ADD,56550138,Population
+2019-06-01,Secondary Care,ribociclib,21813.777777777777,ADD,56550138,Population
+2019-09-01,Secondary Care,ribociclib,27252.444444444445,ADD,56550138,Population
+2019-12-01,Secondary Care,ribociclib,40549.77777777778,ADD,56550138,Population
+2020-03-01,Secondary Care,ribociclib,44370.666666666664,ADD,56550138,Population
+2020-06-01,Secondary Care,ribociclib,37712,ADD,56550138,Population
+2020-09-01,Secondary Care,ribociclib,42232.444444444445,ADD,56550138,Population
+2020-12-01,Secondary Care,ribociclib,42756,ADD,56550138,Population
+2021-03-01,Secondary Care,ribociclib,41587.11111111111,ADD,56550138,Population
+2021-06-01,Secondary Care,ribociclib,42656,ADD,56550138,Population
+2021-09-01,Secondary Care,ribociclib,41569.333333333336,ADD,56550138,Population
+2021-12-01,Secondary Care,ribociclib,45665.333333333336,ADD,56550138,Population
+2022-03-01,Secondary Care,ribociclib,49218.666666666664,ADD,56550138,Population
+2022-06-01,Primary Care,ribociclib,0.4444444444444444,ADD,56550138,Population
+2022-06-01,Secondary Care,ribociclib,53635.11111111111,ADD,56550138,Population
+2021-06-01,Secondary Care,trastuzumab deruxtecan,3122.431414739107,ADD,56550138,Population
+2021-09-01,Secondary Care,trastuzumab deruxtecan,11004.303388918774,ADD,56550138,Population
+2021-12-01,Secondary Care,trastuzumab deruxtecan,15621.839698762777,ADD,56550138,Population
+2022-03-01,Secondary Care,trastuzumab deruxtecan,18881.11888111888,ADD,56550138,Population
+2022-06-01,Secondary Care,trastuzumab deruxtecan,22057.727272727276,ADD,56550138,Population
+2017-09-01,Secondary Care,trastuzumab emtansine,52704.91686844229,ADD,56550138,Population
+2017-12-01,Secondary Care,trastuzumab emtansine,47864.05367231638,ADD,56550138,Population
+2018-03-01,Secondary Care,trastuzumab emtansine,48137.14285714286,ADD,56550138,Population
+2018-06-01,Secondary Care,trastuzumab emtansine,47841.496206618234,ADD,56550138,Population
+2018-09-01,Secondary Care,trastuzumab emtansine,47305.35270379338,ADD,56550138,Population
+2018-12-01,Secondary Care,trastuzumab emtansine,48565.40419693301,ADD,56550138,Population
+2019-03-01,Secondary Care,trastuzumab emtansine,52160.743583535106,ADD,56550138,Population
+2019-06-01,Secondary Care,trastuzumab emtansine,54515.665778853916,ADD,56550138,Population
+2019-09-01,Secondary Care,trastuzumab emtansine,55703.725181598056,ADD,56550138,Population
+2019-12-01,Secondary Care,trastuzumab emtansine,54790.36238902341,ADD,56550138,Population
+2020-03-01,Secondary Care,trastuzumab emtansine,56963.52905569007,ADD,56550138,Population
+2020-06-01,Secondary Care,trastuzumab emtansine,48582.33462469734,ADD,56550138,Population
+2020-09-01,Secondary Care,trastuzumab emtansine,63746.57546408393,ADD,56550138,Population
+2020-12-01,Secondary Care,trastuzumab emtansine,76307.9445520581,ADD,56550138,Population
+2021-03-01,Secondary Care,trastuzumab emtansine,84391.5617433414,ADD,56550138,Population
+2021-06-01,Secondary Care,trastuzumab emtansine,82951.2435835351,ADD,56550138,Population
+2021-09-01,Secondary Care,trastuzumab emtansine,90099.94253430185,ADD,56550138,Population
+2021-12-01,Secondary Care,trastuzumab emtansine,94586.4891041162,ADD,56550138,Population
+2022-03-01,Secondary Care,trastuzumab emtansine,102462.20702179175,ADD,56550138,Population
+2022-06-01,Secondary Care,trastuzumab emtansine,99683.29281678773,ADD,56550138,Population
+2017-09-01,Secondary Care,tucatinib,50,DDD,56550138,Population
+2017-12-01,Secondary Care,tucatinib,125,DDD,56550138,Population
+2018-03-01,Secondary Care,tucatinib,579.16666667,DDD,56550138,Population
+2018-06-01,Secondary Care,tucatinib,945.83333333,DDD,56550138,Population
+2018-09-01,Secondary Care,tucatinib,795.83333333,DDD,56550138,Population
+2018-12-01,Secondary Care,tucatinib,1183.3333333,DDD,56550138,Population
+2019-03-01,Secondary Care,tucatinib,1070.8333333,DDD,56550138,Population
+2019-06-01,Secondary Care,tucatinib,1033.3333333,DDD,56550138,Population
+2019-09-01,Secondary Care,tucatinib,833.33333333,DDD,56550138,Population
+2019-12-01,Secondary Care,tucatinib,770.83333333,DDD,56550138,Population
+2020-03-01,Secondary Care,tucatinib,666.66666667,DDD,56550138,Population
+2020-06-01,Secondary Care,tucatinib,537.5,DDD,56550138,Population
+2020-09-01,Secondary Care,tucatinib,720.83333333,DDD,56550138,Population
+2020-12-01,Secondary Care,tucatinib,733.33333333,DDD,56550138,Population
+2021-03-01,Secondary Care,tucatinib,666.66666667,DDD,56550138,Population
+2021-06-01,Secondary Care,tucatinib,1054.1666667,DDD,56550138,Population
+2021-09-01,Secondary Care,tucatinib,1593.3333333,DDD,56550138,Population
+2021-12-01,Secondary Care,tucatinib,1727.6666667,DDD,56550138,Population
+2022-03-01,Secondary Care,tucatinib,1725.1666667,DDD,56550138,Population
+2022-06-01,Secondary Care,tucatinib,3549.25,DDD,56550138,Population
