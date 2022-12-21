@@ -43,7 +43,9 @@ nat_meds_df <- nat_meds_df %>%
                quarter == "3" ~ "12",
                quarter == "2" ~ "9",
                quarter == "1" ~ "6"),
-           date = lubridate::make_date(year, quarter, "1"), .before = year) %>% 
+           date = lubridate::make_date(year, quarter, "1"), .before = year,
+           # Make date last day of quarter
+           date = lubridate::ceiling_date(date, "month") - lubridate::days(1)) %>% 
     # remove the columns we dont need and move date to start
     select(-c(year, quarter, year_quarter)) %>% 
     # Make the unit conversions to daily doses
@@ -63,7 +65,8 @@ nat_meds_df <- nat_meds_df %>%
         # Amend the numerator units values
         numerator_unit = case_when(
             treatment_name %in% c("neratinib", "ribociclib", "trastuzumab deruxtecan", "trastuzumab emtansine") ~ "ADD",
-            TRUE ~ numerator_unit))
+            TRUE ~ numerator_unit),
+        numerator = round(numerator, 0))
 
 #readr::write_csv(nat_meds_df, "data/clean/bc_meds_nat_2022_10.csv")
 
@@ -85,7 +88,9 @@ stp_meds_df <- stp_meds_df %>%
                quarter == "3" ~ "12",
                quarter == "2" ~ "9",
                quarter == "1" ~ "6"),
-           date = lubridate::make_date(year, quarter, "1"), .before = year) %>% 
+           date = lubridate::make_date(year, quarter, "1"), .before = year,
+           # Make date last day of quarter
+           date = lubridate::ceiling_date(date, "month") - lubridate::days(1)) %>% 
     # remove the columns we dont need and move date to start
     select(-c(year, quarter, year_quarter)) %>% 
     # Change col names ahead of join
@@ -113,6 +118,7 @@ stp_meds_df <- stp_meds_df %>%
         # Amend the numerator units values
         numerator_unit = case_when(
             treatment_name %in% c("neratinib", "ribociclib", "trastuzumab deruxtecan", "trastuzumab emtansine") ~ "ADD",
-            TRUE ~ numerator_unit))
+            TRUE ~ numerator_unit),
+        numerator = round(numerator, 0))
 
 #readr::write_csv(stp_meds_df, "data/clean/bc_meds_stp_2022_10.csv")
