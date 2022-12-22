@@ -19,6 +19,7 @@ options(scipen=999)
 library(tidyverse)
 library(reactable)
 library(plotly)
+library(downloadthis)
 
 # Identify project file
 here::i_am("Prototype_BC_Prescribing.Rproj")
@@ -34,27 +35,52 @@ source(here::here("scripts/rmd_functions.R"))
 meds_ta_df <- readr::read_csv(here::here("data/clean/meds_ta_df.csv"), 
                                 col_select = 1:3)
 
+# Load in national level data
 nat_meds_df <- readr::read_csv(here::here("data/clean/bc_meds_nat_2022_10.csv"))
-
 
 ```
 
+# Medicine comparison
+
+```{r all_meds_plot, out.width = "100%"}
+
+chart_title <- "<b>Prescribing of breast cancer medicines</b>"
+
+nat_meds_df %>% 
+    filter(treatment_name != "pembrolizumab") %>% 
+    group_by(date, treatment_name) %>% 
+    summarise(numerator = sum(numerator),
+              denominator = first(denominator),
+              dd_per_100000 = numerator/(denominator/100000)) %>% 
+    ungroup() %>% 
+    plot_ly(x = ~date,
+            y = ~dd_per_100000,
+            color = ~treatment_name) %>% 
+    add_trace(type = "scatter",
+              mode = "lines+markers") %>% 
+    layout(title = list(text = stringr::str_wrap(chart_title, width = 95),
+                        font = list(size = 12),
+                        x = 0.05,
+                        y = 0.96,
+                        yanchor = "top"),
+           yaxis = list(title = list(text = "Daily doses per 100,000 population",
+                                     standoff = 5),
+                        rangemode = "tozero"),
+           xaxis = list(title = FALSE),
+           hovermode = "x unified",
+           margin = list(t = 65)) %>% 
+    config(displaylogo = FALSE,
+           modeBarButtonsToRemove = c("zoom", "pan", "select", "lasso"))
+
+```
 
 # Individual medicines
 
-## Abemaciclib
+## Abemaciclib {.tabset}
 
- 
+### Observed usage
 
-### Observed usage {.tabset}
-
-The table below is taken from data in the October 2022 publication of the [Innovation Scorecard](https://digital.nhs.uk/data-and-information/publications/statistical/nice-technology-appraisals-in-the-nhs-in-england-innovation-scorecard). It shows secondary care prescribing data by quarter in England for abemaciclib, also includes the very small amount of primary care data observed in the period.  
-
-The observed usage of abemaciclib has increased since it was first authorized in 2018. In 2021 it was approaching the estimated expected level of prescribing. 
-
-#### Observed usage
-
-```{r abemaciclib_usage_plot}
+```{r abemaciclib_usage_plot, out.width = "100%"}
 
 single_med_plot(nat_meds_df, 
                 medicine = "abemaciclib", 
@@ -64,7 +90,7 @@ single_med_plot(nat_meds_df,
 
 ```
 
-#### Underlying data
+### Underlying data
 
 ```{r abemaciclib_data}
 
@@ -72,7 +98,9 @@ nat_meds_df %>%
     filter(treatment_name == "abemaciclib") %>% 
     group_by(date, treatment_name) %>% 
     summarise("Daily doses" = sum(numerator),
-              "Doses per 100,000 population" = round(sum(numerator)/(first(denominator)/100000), 2)) %>% 
+              "Doses per 100,000 population" = round(sum(numerator)/(first(denominator)/100000), 2),
+              # People, assuming quarter is 91 days
+              "Estimated people" = round(numerator/91,0)) %>% 
     ungroup() %>% 
     arrange(desc(date)) %>% 
     rename("Date" = date, "Medicine" = treatment_name) %>% 
@@ -86,33 +114,31 @@ nat_meds_df %>%
 
 ```
 
-#### Relevant guidance
+### Relevant guidance
 
 ```{r abemaciclib_TAs}
 create_med_table(meds_ta_df, "abemaciclib")
 
 ```
-&nbsp;  
 
-#### Therapeutic indications  
+### Therapeutic indications  
 
-##### Early Breast Cancer
+#### Early Breast Cancer
 
 Abemiciclib in combination with endocrine therapy is indicated for the adjuvant treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, node-positive early breast cancer at high risk of recurrence.  
 
 In pre- or perimenopausal women, aromatase inhibitor endocrine therapy should be combined with a luteinising hormone-releasing hormone (LHRH) agonist.
 &nbsp;  
 
-##### Advanced or Metastatic Breast Cancer 
+
+#### Advanced or Metastatic Breast Cancer 
 
 Abemiciclib is indicated for the treatment of women with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative locally advanced or metastatic breast cancer in combination with an aromatase inhibitor or fulvestrant as initial endocrine-based therapy, or in women who have received prior endocrine therapy.
 In pre- or perimenopausal women, the endocrine therapy should be combined with a LHRH agonist.
 
 &nbsp;  
 
-### Methodology
-#### Data source
-#### Eligible population
+### Eligible population
 
 Around 4,000 people are expected to receive treatment with abemaciclib in England annually.  
 
@@ -134,14 +160,40 @@ reactable(abemaciclib_estimate,
 ```
 &nbsp;  
 
-#### Assumptions and limitations
-&nbsp;  
+## Neratinib {.tabset}
 
+### Observed usage
 
+```{r neratinib_usage_plot, out.width = "100%"}
 
+single_med_plot(nat_meds_df, 
+                medicine = "neratinib", 
+                plot_title = "<b>National quarterly usage of neratinib</b>", 
+                ylabel = "People") %>% 
+        add_TA_lines(meds_ta_df, nat_meds_df, "neratinib")
 
-## Neratinib
+```
+### Underlying data
+```{r neratinib_data}
 
+nat_meds_df %>% 
+    filter(treatment_name == "neratinib") %>% 
+    group_by(date, treatment_name) %>% 
+    summarise("Daily doses" = sum(numerator),
+              "Doses per 100,000 population" = round(sum(numerator)/(first(denominator)/100000), 2),
+              # People, assuming quarter is 91 days
+              "Estimated people" = round(numerator/91,0)) %>% 
+    ungroup() %>% 
+    arrange(desc(date)) %>% 
+    rename("Date" = date, "Medicine" = treatment_name) %>% 
+    reactable(
+        filterable = FALSE,
+        searchable = FALSE,
+        highlight = TRUE,
+        style = list(fontSize = "14px"),
+        defaultColDef = colDef(
+            format = colFormat(separators = TRUE)))
+```
 ### Relevant guidance
 
 ```{r neratinib_TAs}
@@ -149,25 +201,40 @@ create_med_table(meds_ta_df, "neratinib")
 
 ```
 
-### Observed vs expected usage
-
-### Background information
-#### Therapeutic indications  
-##### Indication 1
-##### Indication 2
-
-### Methodology
-#### Data source
-#### Eligible population
-#### Assumptions and limitations
-
-
-
-
 &nbsp;  
 
-## Palbociclib
+## Palbociclib {.tabset}
+### Observed usage
+```{r palbociclib_usage_plot, out.width = "100%"}
 
+single_med_plot(nat_meds_df, 
+                medicine = "palbociclib", 
+                plot_title = "<b>National quarterly usage of palbociclib</b>", 
+                ylabel = "People") %>% 
+        add_TA_lines(meds_ta_df, nat_meds_df, "palbociclib")
+
+```
+### Underlying data
+```{r palbociclib_data}
+
+nat_meds_df %>% 
+    filter(treatment_name == "palbociclib") %>% 
+    group_by(date, treatment_name) %>% 
+    summarise("Daily doses" = sum(numerator),
+              "Doses per 100,000 population" = round(sum(numerator)/(first(denominator)/100000), 2),
+              # People, assuming quarter is 91 days
+              "Estimated people" = round(numerator/91,0)) %>% 
+    ungroup() %>% 
+    arrange(desc(date)) %>% 
+    rename("Date" = date, "Medicine" = treatment_name) %>% 
+    reactable(
+        filterable = FALSE,
+        searchable = FALSE,
+        highlight = TRUE,
+        style = list(fontSize = "14px"),
+        defaultColDef = colDef(
+            format = colFormat(separators = TRUE)))
+```
 ### Relevant guidance
 
 ```{r palbociclib_TAs}
@@ -175,26 +242,38 @@ create_med_table(meds_ta_df, "palbociclib")
 
 ```
 
-### Observed usage
-
-### Background information
-#### Therapeutic indications  
-##### Indication 1
-##### Indication 2
-
-### Methodology
-#### Data source
-#### Eligible population
-#### Assumptions and limitations
-
-
-
-
-
 &nbsp;  
 
-## Pembrolizumab
+## Pembrolizumab {.tabset}
+### Observed usage
+```{r pembrolizumab_usage_plot, out.width = "100%"}
 
+single_med_plot(nat_meds_df, 
+                medicine = "pembrolizumab", 
+                plot_title = "<b>National quarterly usage of pembrolizumab</b>", 
+                ylabel = "Milligrams") %>% 
+        add_TA_lines(meds_ta_df, nat_meds_df, "pembrolizumab")
+
+```
+### Underlying data
+```{r pembrolizumab_data}
+
+nat_meds_df %>% 
+    filter(treatment_name == "pembrolizumab") %>% 
+    group_by(date, treatment_name) %>% 
+    summarise("mgs" = sum(numerator),
+              "mgs per 100,000 population" = round(sum(numerator)/(first(denominator)/100000), 2)) %>% 
+    ungroup() %>% 
+    arrange(desc(date)) %>% 
+    rename("Date" = date, "Medicine" = treatment_name) %>% 
+    reactable(
+        filterable = FALSE,
+        searchable = FALSE,
+        highlight = TRUE,
+        style = list(fontSize = "14px"),
+        defaultColDef = colDef(
+            format = colFormat(separators = TRUE)))
+```
 ### Relevant guidance
 
 ```{r pembrolizumab_TAs}
@@ -202,26 +281,41 @@ create_med_table(meds_ta_df, "pembrolizumab")
 
 ```
 
-### Observed usage
-
-### Background information
-#### Therapeutic indications  
-##### Indication 1
-##### Indication 2
-
-### Methodology
-#### Data source
-#### Eligible population
-#### Assumptions and limitations
-
-
-
-
-
 &nbsp;  
 
-## Ribociclib
+## Ribociclib {.tabset}
+### Observed usage
+```{r ribociclib_usage_plot, out.width = "100%"}
 
+single_med_plot(nat_meds_df, 
+                medicine = "ribociclib", 
+                plot_title = "<b>National quarterly usage of ribociclib</b>", 
+                ylabel = "People") %>% 
+        add_TA_lines(meds_ta_df, nat_meds_df, "ribociclib")
+
+```
+
+### Underlying data
+```{r ribociclib_data}
+
+nat_meds_df %>% 
+    filter(treatment_name == "ribociclib") %>% 
+    group_by(date, treatment_name) %>% 
+    summarise("Daily doses" = sum(numerator),
+              "Doses per 100,000 population" = round(sum(numerator)/(first(denominator)/100000), 2),
+              # People, assuming quarter is 91 days
+              "Estimated people" = round(numerator/91,0)) %>% 
+    ungroup() %>% 
+    arrange(desc(date)) %>% 
+    rename("Date" = date, "Medicine" = treatment_name) %>% 
+    reactable(
+        filterable = FALSE,
+        searchable = FALSE,
+        highlight = TRUE,
+        style = list(fontSize = "14px"),
+        defaultColDef = colDef(
+            format = colFormat(separators = TRUE)))
+```
 ### Relevant guidance
 
 ```{r ribociclib_TAs}
@@ -229,53 +323,81 @@ create_med_table(meds_ta_df, "ribociclib")
 
 ```
 
-### Observed usage
-
-### Background information
-#### Therapeutic indications  
-##### Indication 1
-##### Indication 2
-
-### Methodology
-#### Data source
-#### Eligible population
-#### Assumptions and limitations
-
-
-
-
-
 &nbsp;  
 
-## Trastuzumab deruxtecan
+## Trastuzumab deruxtecan {.tabset}
+### Observed usage
+```{r trast_der_usage_plot, out.width = "100%"}
 
+single_med_plot(nat_meds_df, 
+                medicine = "trastuzumab deruxtecan", 
+                plot_title = "<b>National quarterly usage of trastuzumab deruxtecan</b>", 
+                ylabel = "People") %>% 
+        add_TA_lines(meds_ta_df, nat_meds_df, "trastuzumab deruxtecan")
+
+```
+### Underlying data
+```{r trast_der_data}
+
+nat_meds_df %>% 
+    filter(treatment_name == "trastuzumab deruxtecan") %>% 
+    group_by(date, treatment_name) %>% 
+    summarise("Daily doses" = sum(numerator),
+              "Doses per 100,000 population" = round(sum(numerator)/(first(denominator)/100000), 2),
+              # People, assuming quarter is 91 days
+              "Estimated people" = round(numerator/91,0)) %>% 
+    ungroup() %>% 
+    arrange(desc(date)) %>% 
+    rename("Date" = date, "Medicine" = treatment_name) %>% 
+    reactable(
+        filterable = FALSE,
+        searchable = FALSE,
+        highlight = TRUE,
+        style = list(fontSize = "14px"),
+        defaultColDef = colDef(
+            format = colFormat(separators = TRUE)))
+```
 ### Relevant guidance
-
 ```{r trastuzumab_der_TAs}
 create_med_table(meds_ta_df, "trastuzumab deruxtecan")
 
 ```
 
-### Observed usage
-
-### Background information
-#### Therapeutic indications  
-##### Indication 1
-##### Indication 2
-
-### Methodology
-#### Data source
-#### Eligible population
-#### Assumptions and limitations
-
-
-
-
-
 &nbsp;  
 
-## Trastuzumab emtansine
+## Trastuzumab emtansine {.tabset}
+### Observed usage
 
+```{r trast_em_usage_plot, out.width = "100%"}
+
+single_med_plot(nat_meds_df, 
+                medicine = "trastuzumab emtansine", 
+                plot_title = "<b>National quarterly usage of trastuzumab emtansine</b>", 
+                ylabel = "People") %>% 
+        add_TA_lines(meds_ta_df, nat_meds_df, "trastuzumab emtansine")
+
+```
+### Underlying data
+```{r trast_em_data}
+
+nat_meds_df %>% 
+    filter(treatment_name == "trastuzumab emtansine") %>% 
+    group_by(date, treatment_name) %>% 
+    summarise("Daily doses" = sum(numerator),
+              "Doses per 100,000 population" = round(sum(numerator)/(first(denominator)/100000), 2),
+              # People, assuming quarter is 91 days
+              "Estimated people" = round(numerator/91,0)) %>% 
+    ungroup() %>% 
+    arrange(desc(date)) %>% 
+    rename("Date" = date, "Medicine" = treatment_name) %>% 
+    reactable(
+        filterable = FALSE,
+        searchable = FALSE,
+        highlight = TRUE,
+        style = list(fontSize = "14px"),
+        defaultColDef = colDef(
+            format = colFormat(separators = TRUE)))
+```
 ### Relevant guidance
 
 ```{r trastuzumab_emt_TAs}
@@ -283,41 +405,43 @@ create_med_table(meds_ta_df, "trastuzumab emtansine")
 
 ```
 
-### Observed usage
-
-### Background information
-#### Therapeutic indications  
-##### Indication 1
-##### Indication 2
-
-### Methodology
-#### Data source
-#### Eligible population
-#### Assumptions and limitations
-
-
-
-
 &nbsp;  
 
-## Tucatinib
+## Tucatinib {.tabset}
+### Observed usage
+```{r tucatinib_usage_plot, out.width = "100%"}
 
+single_med_plot(nat_meds_df, 
+                medicine = "tucatinib", 
+                plot_title = "<b>National quarterly usage of tucatinib</b>", 
+                ylabel = "People") %>% 
+        add_TA_lines(meds_ta_df, nat_meds_df, "tucatinib")
+
+```
+### Underlying data
+```{r tucatinib_data}
+
+nat_meds_df %>% 
+    filter(treatment_name == "tucatinib") %>% 
+    group_by(date, treatment_name) %>% 
+    summarise("Daily doses" = sum(numerator),
+              "Doses per 100,000 population" = round(sum(numerator)/(first(denominator)/100000), 2),
+              # People, assuming quarter is 91 days
+              "Estimated people" = round(numerator/91,0)) %>% 
+    ungroup() %>% 
+    arrange(desc(date)) %>% 
+    rename("Date" = date, "Medicine" = treatment_name) %>% 
+    reactable(
+        filterable = FALSE,
+        searchable = FALSE,
+        highlight = TRUE,
+        style = list(fontSize = "14px"),
+        defaultColDef = colDef(
+            format = colFormat(separators = TRUE)))
+```
 ### Relevant guidance
 
 ```{r tucatinib}
 create_med_table(meds_ta_df, "tucatinib")
 
 ```
-
-### Observed usage
-
-### Background information
-#### Therapeutic indications  
-##### Indication 1
-##### Indication 2
-
-### Methodology
-#### Data source
-#### Eligible population
-#### Assumptions and limitations
-
