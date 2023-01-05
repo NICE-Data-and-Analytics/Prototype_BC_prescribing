@@ -40,39 +40,12 @@ nat_meds_df <- readr::read_csv(here::here("data/clean/bc_meds_nat_2022_10.csv"))
 
 ```
 
-# Medicine comparison
+# Background
 
-```{r all_meds_plot, out.width = "100%"}
+Over the last 20 years NICE has recommended over a dozen medicines for the treatment of breast cancer. Here we look at the usage of seven of these medicines where the guidance was published in the last 5 years, and we have both primary and secondary care usage data. These medicines included are abemaciclib, neratinib, palbociclib, ribociclib , trastuzumab deruxtecan, trastuzumab emtansine and tucatinib. 
+Pembrolizumab does meet the criteria but is not included as it is widely used for treatments other than breast cancer and the usage data available is not split by indication. Breast cancer medicines eribulin, everolimus and pertuzumab are not included as the initial NICE technology appraisals are more than 5 years old and the usage data is no longer published. 
 
-chart_title <- "<b>Prescribing of breast cancer medicines</b>"
-
-nat_meds_df %>% 
-    filter(treatment_name != "pembrolizumab") %>% 
-    group_by(date, treatment_name) %>% 
-    summarise(numerator = sum(numerator),
-              denominator = first(denominator),
-              dd_per_100000 = numerator/(denominator/100000)) %>% 
-    ungroup() %>% 
-    plot_ly(x = ~date,
-            y = ~dd_per_100000,
-            color = ~treatment_name) %>% 
-    add_trace(type = "scatter",
-              mode = "lines+markers") %>% 
-    layout(title = list(text = stringr::str_wrap(chart_title, width = 95),
-                        font = list(size = 12),
-                        x = 0.05,
-                        y = 0.96,
-                        yanchor = "top"),
-           yaxis = list(title = list(text = "Daily doses per 100,000 population",
-                                     standoff = 5),
-                        rangemode = "tozero"),
-           xaxis = list(title = FALSE),
-           hovermode = "x unified",
-           margin = list(t = 65)) %>% 
-    config(displaylogo = FALSE,
-           modeBarButtonsToRemove = c("zoom", "pan", "select", "lasso"))
-
-```
+The usage data for each of the included medicines was supplied with differing units. This has been converted into a common unit here referred to as daily dose. A daily dose is an approximation of how much medicine 1 person receiving the treatment would receive in 1 day, where the treatment is assumed to be split evenly between days. 
 
 # Individual medicines
 
@@ -140,9 +113,8 @@ In pre- or perimenopausal women, the endocrine therapy should be combined with a
 
 ### Eligible population
 
-Around 4,000 people are expected to receive treatment with abemaciclib in England annually.  
+Around 2,200 people are expected to receive treatment with abemaciclib in England annually. This estimate of the treatment population is taken from the Resource Impact Template developed for the NICE technology appraisal ‘Abemaciclib with endocrine therapy for adjuvant treatment of hormone receptor-positive, HER2-negative, node-positive early breast cancer at high risk of recurrence’, published July 2022 and 'Abemaciclib with fulvestrant for treating hormone receptor-positive, HER2-negative advanced breast cancer after endocrine therapy' published September 2021. The observed usage has been taken from the innovation scorecard. The supplied unit was average daily dose (ADD), it is assumed here that 1 daily dose equals 1 ADD. The number of daily doses in a year was divided by 365 for the number of people. 
 
-This has been taken from the Resource impact template developed for the NICE technology appraisal 'Abemaciclib with endocrine therapy for adjuvant treatment of hormone receptor-positive, HER2-negative, node-positive early breast cancer at high risk of recurrence', published July 2022.
 &nbsp;  
 
 ```{r abemaciclib_pop }
@@ -154,8 +126,13 @@ reactable(abemaciclib_estimate,
         searchable = FALSE,
         highlight = TRUE,
         style = list(fontSize = "14px"),
-        defaultColDef = colDef(
-            format = colFormat(separators = TRUE)))
+        columns = list(
+            estimate = colDef(name = "Estimate of treatment population",
+                              minWidth = 400),
+            percentage = colDef(name = "Percentage of people",
+                                format = colFormat(percent = TRUE, digits = 2)),
+            people = colDef(name = "Number of people",
+                            format = colFormat(separators = TRUE, digits = 0))))
 
 ```
 &nbsp;  
@@ -173,6 +150,7 @@ single_med_plot(nat_meds_df,
         add_TA_lines(meds_ta_df, nat_meds_df, "neratinib")
 
 ```
+
 ### Underlying data
 ```{r neratinib_data}
 
@@ -194,10 +172,43 @@ nat_meds_df %>%
         defaultColDef = colDef(
             format = colFormat(separators = TRUE)))
 ```
+
 ### Relevant guidance
 
 ```{r neratinib_TAs}
 create_med_table(meds_ta_df, "neratinib")
+
+```
+
+### Therapeutic indications  
+
+#### Early Breast Cancer
+
+Neratinib (brand name Nerlynx) is indicated for the extended adjuvant treatment of adult patients with early-stage hormone receptor positive HER2-overexpressed/amplified breast cancer and who completed adjuvant trastuzumab-based therapy less than one year ago.
+
+&nbsp;  
+
+
+### Eligible population
+
+Around 400 people are expected to receive treatment with neratinib in England annually. This estimate of the treatment population is taken from the Resource Impact Template developed for the NICE technology appraisal 'Neratinib for extended adjuvant treatment of hormone receptor-positive, HER2-positive early stage breast cancer after adjuvant trastuzumab', published November 2019. The observed usage has been taken from the Innovation Scorecard. The supplied unit was milligrams, based on the WHO Defined Daily Dose (DDD), 1 daily dose equals 240mg. The number of daily doses in a year was divided by 365 for the number of people. 
+
+```{r neratinib_pop }
+
+neratinib_estimate <- read_csv(here::here("data/Neratinib_estimate.csv"))
+
+reactable(neratinib_estimate,
+        filterable = FALSE,
+        searchable = FALSE,
+        highlight = TRUE,
+        style = list(fontSize = "14px"),
+        columns = list(
+            estimate = colDef(name = "Estimate of treatment population",
+                              minWidth = 400),
+            percentage = colDef(name = "Percentage of people",
+                                format = colFormat(percent = TRUE, digits = 2)),
+            people = colDef(name = "Number of people",
+                            format = colFormat(separators = TRUE, digits = 0))))
 
 ```
 
@@ -239,45 +250,6 @@ nat_meds_df %>%
 
 ```{r palbociclib_TAs}
 create_med_table(meds_ta_df, "palbociclib")
-
-```
-
-&nbsp;  
-
-## Pembrolizumab {.tabset}
-### Observed usage
-```{r pembrolizumab_usage_plot, out.width = "100%"}
-
-single_med_plot(nat_meds_df, 
-                medicine = "pembrolizumab", 
-                plot_title = "<b>National quarterly usage of pembrolizumab</b>", 
-                ylabel = "Milligrams") %>% 
-        add_TA_lines(meds_ta_df, nat_meds_df, "pembrolizumab")
-
-```
-### Underlying data
-```{r pembrolizumab_data}
-
-nat_meds_df %>% 
-    filter(treatment_name == "pembrolizumab") %>% 
-    group_by(date, treatment_name) %>% 
-    summarise("mgs" = sum(numerator),
-              "mgs per 100,000 population" = round(sum(numerator)/(first(denominator)/100000), 2)) %>% 
-    ungroup() %>% 
-    arrange(desc(date)) %>% 
-    rename("Date" = date, "Medicine" = treatment_name) %>% 
-    reactable(
-        filterable = FALSE,
-        searchable = FALSE,
-        highlight = TRUE,
-        style = list(fontSize = "14px"),
-        defaultColDef = colDef(
-            format = colFormat(separators = TRUE)))
-```
-### Relevant guidance
-
-```{r pembrolizumab_TAs}
-create_med_table(meds_ta_df, "pembrolizumab")
 
 ```
 
@@ -443,5 +415,39 @@ nat_meds_df %>%
 
 ```{r tucatinib}
 create_med_table(meds_ta_df, "tucatinib")
+
+```
+
+# Comparing medicines usage
+
+```{r all_meds_plot, out.width = "100%"}
+
+chart_title <- "<b>Prescribing of breast cancer medicines</b>"
+
+nat_meds_df %>% 
+    filter(treatment_name != "pembrolizumab") %>% 
+    group_by(date, treatment_name) %>% 
+    summarise(numerator = sum(numerator),
+              denominator = first(denominator),
+              dd_per_100000 = numerator/(denominator/100000)) %>% 
+    ungroup() %>% 
+    plot_ly(x = ~date,
+            y = ~dd_per_100000,
+            color = ~treatment_name) %>% 
+    add_trace(type = "scatter",
+              mode = "lines+markers") %>% 
+    layout(title = list(text = stringr::str_wrap(chart_title, width = 95),
+                        font = list(size = 12),
+                        x = 0.05,
+                        y = 0.96,
+                        yanchor = "top"),
+           yaxis = list(title = list(text = "Daily doses per 100,000 population",
+                                     standoff = 5),
+                        rangemode = "tozero"),
+           xaxis = list(title = FALSE),
+           hovermode = "x unified",
+           margin = list(t = 65)) %>% 
+    config(displaylogo = FALSE,
+           modeBarButtonsToRemove = c("zoom", "pan", "select", "lasso"))
 
 ```

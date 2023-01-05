@@ -1,0 +1,18 @@
+﻿estimate,percentage,people
+Adult population,,43752473
+Incidence of breast cancer in England,0.001046569,45790
+Proportion of women with invasive disease,0.8,36632
+"Proportion of women with early breast cancer (stage I, II or III) on diagnosis",0.94,34434.08
+Proportion of women who will survive to disease progression,0.7,24103.856
+Proportion of women who have surgery,0.81,19524.12336
+Proportion of women who are tested for human epidermal growth factor receptor 2 (HER2),0.92,17962.19349
+Proportion of women who have HER2 positive (HER2+) disease,0.15,2694.329024
+Proportion of women who have HER2+ and hormone receptor positive (HR+) disease,0.66,1778.257156
+Proportion of women who have lymph node negative disease,0.31,551.2597182
+Proportion of women with lymph node negative disease who have trastuzumab in the adjuvant setting,1,551.2597182
+Proportion of women who have lymph node positive disease,0.69,1226.997437
+Proportion of women with node positive disease who have pertuzumab in the adjuvant setting,0.95,1165.647566
+Proportion of women with node positive disease who have trastuzumab in the adjuvant setting,0.05,61.34987187
+Total number of women who have trastuzumab in the adjuvant setting,,612.6095901
+Proportion of women who complete a full course of adjuvant trastuzumab and are elligible for neratinib maintenance therapy,0.812,497.4389872
+Proportion of people will receive treatment with neratinib from year 3 onwards (2022) once uptake has reached 80%.,0.8,397.9511897
