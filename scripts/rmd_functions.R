@@ -18,7 +18,32 @@ med_regex <- function(medicine){
 # Functions for tables ----------------------------------------------------
 
 # Create a reactable table of TAs for a given medicine name
-create_med_table <- function(meds_ta_df, medicine){
+
+create_data_table <- function(med_df, medicine){
+    
+    temp <- med_df %>% 
+        filter(treatment_name == medicine) %>% 
+        group_by(date, treatment_name) %>% 
+        summarise("Daily doses" = sum(numerator),
+                  "Doses per 100,000 population" = round(sum(numerator)/(first(denominator)/100000), 2),
+                  # People, assuming quarter is 91 days
+                  "Estimated people" = round(numerator/91,0)) %>% 
+        ungroup() %>% 
+        arrange(desc(date)) %>% 
+        rename("Date" = date, "Medicine" = treatment_name) %>% 
+        reactable(
+            filterable = FALSE,
+            searchable = FALSE,
+            highlight = TRUE,
+            defaultPageSize = 20,
+            style = list(fontSize = "14px"),
+            defaultColDef = colDef(
+                format = colFormat(separators = TRUE)))
+    
+}
+
+# Create a reactable table of TAs for a given medicine name
+create_med_TA_table <- function(meds_ta_df, medicine){
     
     med_reg <- med_regex(medicine)
     
@@ -39,6 +64,7 @@ create_med_table <- function(meds_ta_df, medicine){
     
     return(temp)
 }
+
 
 # Functions for charts ----------------------------------------------------
 
@@ -123,7 +149,7 @@ add_TA_lines <- function(plot, meds_ta_df, nat_meds_df, medicine){
     
     med_reg <- med_regex(medicine)
     
-    tmp_df <- nat_meds_df %>% filter(treatment_name == "abemaciclib")
+    tmp_df <- nat_meds_df %>% filter(treatment_name == medicine)
     
     min_date <- min(tmp_df$date)
     max_date <- max(tmp_df$date)
@@ -149,3 +175,62 @@ add_TA_lines <- function(plot, meds_ta_df, nat_meds_df, medicine){
     
     return(plot)
 }
+
+# Shiny plot --------------------------------------------------------------
+
+create_med_plot <- function(nat_meds_df, medicine, ylabel){
+    
+    
+    tmp_df <- nat_meds_df %>% 
+        filter(treatment_name == medicine) %>% 
+        group_by(date, treatment_name) %>% 
+        summarise(numerator = sum(numerator)/91) %>% 
+        ungroup()
+    
+    plot <- tmp_df %>% 
+        plot_ly(x = ~date,
+                y = ~numerator) %>% 
+        add_trace(type = "scatter",
+                  mode = "lines+markers",
+                  fill = 'tozeroy') %>% 
+        layout(yaxis = list(title = list(text = ylabel,
+                                         standoff = 5),
+                            rangemode = "tozero",
+                            range = list(0, max(tmp_df$numerator) * 1.2)),
+               xaxis = list(title = FALSE,
+                            tickformat = "%b<br>%Y"),
+               hovermode = "x unified") %>% 
+        config(displaylogo = FALSE,
+               displayModeBar = FALSE)
+    
+    return(plot)
+}
+
+
+
+# Indication text ---------------------------------------------------------
+
+write_indication_text <- function(indications_df, medicine){
+    
+    med_reg <- med_regex(medicine)
+    
+    temp_df <- indications_df %>% 
+        filter(stringr::str_detect(medicine, med_reg))
+    
+    indication_text <- ""
+    
+    for (i in seq_len(nrow(temp_df))){
+        
+        tmp_text <- paste0("<b>",
+                           pull(temp_df[i,"indication"]),
+                           "</b><br>",
+                           pull(temp_df[i,"description"]),
+                           "<br><br>")
+        
+        indication_text <- stringr::str_c(indication_text, tmp_text)
+    }
+    
+    return(indication_text)
+}
+
+

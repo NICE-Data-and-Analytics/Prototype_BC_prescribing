@@ -1,0 +1,79 @@
+
+.box {
+    border-radius: 5px;
+}
+
+/* Box header */
+.box-header {
+    background-color: #228096;
+    padding: 5px 10px 5px 10px;
+    color: #FFFFFF;
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 5px 5px 0px 0px;
+    height: 30px;
+}
+
+
+/* Box content */
+.box-body {
+    padding: 10px;
+    border: 1px solid;
+    border-top: 0;
+    border-color: #000000;
+    border-radius: 0px 0px 5px 5px;
+    
+}
+
+/* logo */
+.skin-yellow .main-header .logo {
+    background-color: #00436C;
+}
+
+/* logo when hovered */
+.skin-yellow .main-header .logo:hover {
+    background-color: #00436C;
+}
+
+/* navbar (rest of the header) */
+.skin-yellow .main-header .navbar {
+    background-color: #00436C;
+}
+
+/* toggle button when hovered  */                    
+.skin-yellow .main-header .navbar .sidebar-toggle:hover{
+    background-color: #EAD054;
+}
+
+/* active selected tab in the sidebarmenu */
+.skin-yellow .main-sidebar .sidebar .sidebar-menu .active a{
+    border-left-color: #EAD054
+}
+
+/* other links in the sidebarmenu when hovered */
+.skin-yellow .main-sidebar .sidebar .sidebar-menu a:hover{
+    border-left-color: #EAD054
+}
+
+.nav-tabs a {
+    background-color: #00436C;
+    color: #FFFFFF;
+}
+
+
+/* main sidebar 
+.skin-blue .main-sidebar {
+    background-color: #404040;
+} 
+*/
+
+/* other links in the sidebarmenu 
+.skin-blue .main-sidebar .sidebar .sidebar-menu a{
+    background-color: #00ff00;
+    color: #000000;
+}
+*/
+
+
+
+
