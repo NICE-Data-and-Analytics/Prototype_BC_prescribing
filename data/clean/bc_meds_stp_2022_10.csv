@@ -113,48 +113,6 @@ date,data_source,treatment_name,stp_ods_cd,stp_gss_cd,stp_name,reg_ods_cd,reg_gs
 2020-09-30,Secondary Care,palbociclib,QWU,E54000018,Coventry and Warwickshire STP,Y60,E40000008,Midlands,5926,DDD,963173,Population
 2020-09-30,Secondary Care,palbociclib,QXU,E54000052,Surrey Heartlands Health & Care Partnership STP,Y59,E40000005,South East,8339,DDD,1052425,Population
 2020-09-30,Secondary Care,palbociclib,QYG,E54000008,Cheshire and Merseyside STP,Y62,E40000010,North West,5912,DDD,2503902,Population
-2020-09-30,Secondary Care,pembrolizumab,QE1,E54000048,Lancashire and South Cumbria ICS,Y62,E40000010,North West,164600,mgs,1701655,Population
-2020-09-30,Secondary Care,pembrolizumab,QF7,E54000009,South Yorkshire and Bassetlaw STP,Y63,E40000009,North East and Yorkshire,77600,mgs,1533334,Population
-2020-09-30,Secondary Care,pembrolizumab,QGH,E54000019,Herefordshire and Worcestershire STP,Y60,E40000008,Midlands,49300,mgs,791685,Population
-2020-09-30,Secondary Care,pembrolizumab,QH8,E54000026,Mid and South Essex STP,Y61,E40000007,East of England,106700,mgs,1199296,Population
-2020-09-30,Secondary Care,pembrolizumab,QHG,E54000024,"Bedfordshire, Luton and Milton Keynes STP",Y61,E40000007,East of England,47200,mgs,959098,Population
-2020-09-30,Secondary Care,pembrolizumab,QHL,E54000017,Birmingham and Solihull STP,Y60,E40000008,Midlands,217850,mgs,1179731,Population
-2020-09-30,Secondary Care,pembrolizumab,QHM,E54000050,Cumbria and North East STP,Y63,E40000009,North East and Yorkshire,185600,mgs,3000432,Population
-2020-09-30,Secondary Care,pembrolizumab,QJ2,E54000012,Joined Up Care Derbyshire STP,Y60,E40000008,Midlands,61400,mgs,1030393,Population
-2020-09-30,Secondary Care,pembrolizumab,QJG,E54000023,Suffolk and North East Essex ICS,Y61,E40000007,East of England,44000,mgs,987177,Population
-2020-09-30,Secondary Care,pembrolizumab,QJK,E54000037,Devon STP,Y58,E40000006,South West,112600,mgs,1209773,Population
-2020-09-30,Secondary Care,pembrolizumab,QJM,E54000013,Lincolnshire STP,Y60,E40000008,Midlands,62400,mgs,766333,Population
-2020-09-30,Secondary Care,pembrolizumab,QK1,E54000015,"Leicester, Leicestershire and Rutland STP",Y60,E40000008,Midlands,79000,mgs,1107597,Population
-2020-09-30,Secondary Care,pembrolizumab,QKK,E54000030,Our Healthier South East London STP,Y56,E40000003,London,117900,mgs,1818226,Population
-2020-09-30,Secondary Care,pembrolizumab,QKS,E54000032,Kent and Medway STP,Y59,E40000005,South East,115800,mgs,1868199,Population
-2020-09-30,Secondary Care,pembrolizumab,QM7,E54000025,Hertfordshire and West Essex STP,Y61,E40000007,East of England,89000,mgs,1488061,Population
-2020-09-30,Secondary Care,pembrolizumab,QMF,E54000029,East London Health & Care Partnership STP,Y56,E40000003,London,103825,mgs,2036470,Population
-2020-09-30,Secondary Care,pembrolizumab,QMJ,E54000028,North London Partners in Health & Care STP,Y56,E40000003,London,48900,mgs,1526582,Population
-2020-09-30,Secondary Care,pembrolizumab,QMM,E54000022,Norfolk and Waveney Health & Care Partnership STP,Y61,E40000007,East of England,93300,mgs,1032661,Population
-2020-09-30,Secondary Care,pembrolizumab,QNC,E54000010,Staffordshire & Stoke on Trent STP,Y60,E40000008,Midlands,67800,mgs,1139794,Population
-2020-09-30,Secondary Care,pembrolizumab,QNQ,E54000034,Frimley Health & Care STP,Y59,E40000005,South East,13400,mgs,746739,Population
-2020-09-30,Secondary Care,pembrolizumab,QNX,E54000053,Sussex Health and Care Partnership,Y59,E40000005,South East,67300,mgs,1711539,Population
-2020-09-30,Secondary Care,pembrolizumab,QOC,E54000011,Shropshire and Telford and Wrekin STP,Y60,E40000008,Midlands,24200,mgs,506737,Population
-2020-09-30,Secondary Care,pembrolizumab,QOP,E54000007,Greater Manchester Health & Social Care Partnership,Y62,E40000010,North West,191850,mgs,2881890,Population
-2020-09-30,Secondary Care,pembrolizumab,QOQ,E54000051,"Humber, Coast and Vale STP",Y63,E40000009,North East and Yorkshire,95100,mgs,1708723,Population
-2020-09-30,Secondary Care,pembrolizumab,QOX,E54000040,"Bath and North East Somerset, Swindon and Wiltshire STP",Y58,E40000006,South West,51525,mgs,929964,Population
-2020-09-30,Secondary Care,pembrolizumab,QPM,E54000020,Northamptonshire STP,Y60,E40000008,Midlands,38200,mgs,740111,Population
-2020-09-30,Secondary Care,pembrolizumab,QR1,E54000043,Gloucestershire STP,Y58,E40000006,South West,29700,mgs,640650,Population
-2020-09-30,Secondary Care,pembrolizumab,QRL,E54000042,Hampshire and the Isle of Wight STP,Y59,E40000005,South East,158540,mgs,1831473,Population
-2020-09-30,Secondary Care,pembrolizumab,QRV,E54000027,North West London Health & Care Partnership STP,Y56,E40000003,London,176400,mgs,2111469,Population
-2020-09-30,Secondary Care,pembrolizumab,QSL,E54000038,Somerset STP,Y58,E40000006,South West,43300,mgs,563851,Population
-2020-09-30,Secondary Care,pembrolizumab,QT1,E54000014,Nottingham and Nottinghamshire Health and Care STP,Y60,E40000008,Midlands,82700,mgs,1052195,Population
-2020-09-30,Secondary Care,pembrolizumab,QT6,E54000036,Cornwall and the Isles of Scilly Health & Social Care Partnership STP,Y58,E40000006,South West,92000,mgs,575525,Population
-2020-09-30,Secondary Care,pembrolizumab,QU9,E54000044,"Buckinghamshire, Oxfordshire and Berkshire West STP",Y59,E40000005,South East,128200,mgs,1723447,Population
-2020-09-30,Secondary Care,pembrolizumab,QUA,E54000016,The Black Country and West Birmingham STP,Y60,E40000008,Midlands,47600,mgs,1380809,Population
-2020-09-30,Secondary Care,pembrolizumab,QUE,E54000021,Cambridgeshire and Peterborough STP,Y61,E40000007,East of England,70600,mgs,896725,Population
-2020-09-30,Secondary Care,pembrolizumab,QUY,E54000039,"Bristol, North Somerset and South Gloucestershire STP",Y58,E40000006,South West,56000,mgs,969256,Population
-2020-09-30,Secondary Care,pembrolizumab,QVV,E54000041,Dorset STP,Y58,E40000006,South West,55200,mgs,776780,Population
-2020-09-30,Secondary Care,pembrolizumab,QWE,E54000031,South West London Health & Care Partnership STP,Y56,E40000003,London,10300,mgs,1509741,Population
-2020-09-30,Secondary Care,pembrolizumab,QWO,E54000054,West Yorkshire and Harrogate Health & Care Partnership STP,Y63,E40000009,North East and Yorkshire,125600,mgs,2396517,Population
-2020-09-30,Secondary Care,pembrolizumab,QWU,E54000018,Coventry and Warwickshire STP,Y60,E40000008,Midlands,44600,mgs,963173,Population
-2020-09-30,Secondary Care,pembrolizumab,QXU,E54000052,Surrey Heartlands Health & Care Partnership STP,Y59,E40000005,South East,88400,mgs,1052425,Population
-2020-09-30,Secondary Care,pembrolizumab,QYG,E54000008,Cheshire and Merseyside STP,Y62,E40000010,North West,185650,mgs,2503902,Population
 2020-09-30,Secondary Care,ribociclib,QE1,E54000048,Lancashire and South Cumbria ICS,Y62,E40000010,North West,299,ADD,1701655,Population
 2020-09-30,Secondary Care,ribociclib,QF7,E54000009,South Yorkshire and Bassetlaw STP,Y63,E40000009,North East and Yorkshire,1624,ADD,1533334,Population
 2020-09-30,Secondary Care,ribociclib,QGH,E54000019,Herefordshire and Worcestershire STP,Y60,E40000008,Midlands,93,ADD,791685,Population
@@ -356,48 +314,6 @@ date,data_source,treatment_name,stp_ods_cd,stp_gss_cd,stp_name,reg_ods_cd,reg_gs
 2020-12-31,Secondary Care,palbociclib,QWU,E54000018,Coventry and Warwickshire STP,Y60,E40000008,Midlands,6155,DDD,963173,Population
 2020-12-31,Secondary Care,palbociclib,QXU,E54000052,Surrey Heartlands Health & Care Partnership STP,Y59,E40000005,South East,8277,DDD,1052425,Population
 2020-12-31,Secondary Care,palbociclib,QYG,E54000008,Cheshire and Merseyside STP,Y62,E40000010,North West,16962,DDD,2503902,Population
-2020-12-31,Secondary Care,pembrolizumab,QE1,E54000048,Lancashire and South Cumbria ICS,Y62,E40000010,North West,159400,mgs,1701655,Population
-2020-12-31,Secondary Care,pembrolizumab,QF7,E54000009,South Yorkshire and Bassetlaw STP,Y63,E40000009,North East and Yorkshire,87175,mgs,1533334,Population
-2020-12-31,Secondary Care,pembrolizumab,QGH,E54000019,Herefordshire and Worcestershire STP,Y60,E40000008,Midlands,54000,mgs,791685,Population
-2020-12-31,Secondary Care,pembrolizumab,QH8,E54000026,Mid and South Essex STP,Y61,E40000007,East of England,118400,mgs,1199296,Population
-2020-12-31,Secondary Care,pembrolizumab,QHG,E54000024,"Bedfordshire, Luton and Milton Keynes STP",Y61,E40000007,East of England,39200,mgs,959098,Population
-2020-12-31,Secondary Care,pembrolizumab,QHL,E54000017,Birmingham and Solihull STP,Y60,E40000008,Midlands,206200,mgs,1179731,Population
-2020-12-31,Secondary Care,pembrolizumab,QHM,E54000050,Cumbria and North East STP,Y63,E40000009,North East and Yorkshire,195400,mgs,3000432,Population
-2020-12-31,Secondary Care,pembrolizumab,QJ2,E54000012,Joined Up Care Derbyshire STP,Y60,E40000008,Midlands,55800,mgs,1030393,Population
-2020-12-31,Secondary Care,pembrolizumab,QJG,E54000023,Suffolk and North East Essex ICS,Y61,E40000007,East of England,38500,mgs,987177,Population
-2020-12-31,Secondary Care,pembrolizumab,QJK,E54000037,Devon STP,Y58,E40000006,South West,124096,mgs,1209773,Population
-2020-12-31,Secondary Care,pembrolizumab,QJM,E54000013,Lincolnshire STP,Y60,E40000008,Midlands,60200,mgs,766333,Population
-2020-12-31,Secondary Care,pembrolizumab,QK1,E54000015,"Leicester, Leicestershire and Rutland STP",Y60,E40000008,Midlands,81100,mgs,1107597,Population
-2020-12-31,Secondary Care,pembrolizumab,QKK,E54000030,Our Healthier South East London STP,Y56,E40000003,London,126000,mgs,1818226,Population
-2020-12-31,Secondary Care,pembrolizumab,QKS,E54000032,Kent and Medway STP,Y59,E40000005,South East,133400,mgs,1868199,Population
-2020-12-31,Secondary Care,pembrolizumab,QM7,E54000025,Hertfordshire and West Essex STP,Y61,E40000007,East of England,99300,mgs,1488061,Population
-2020-12-31,Secondary Care,pembrolizumab,QMF,E54000029,East London Health & Care Partnership STP,Y56,E40000003,London,97200,mgs,2036470,Population
-2020-12-31,Secondary Care,pembrolizumab,QMJ,E54000028,North London Partners in Health & Care STP,Y56,E40000003,London,52900,mgs,1526582,Population
-2020-12-31,Secondary Care,pembrolizumab,QMM,E54000022,Norfolk and Waveney Health & Care Partnership STP,Y61,E40000007,East of England,98000,mgs,1032661,Population
-2020-12-31,Secondary Care,pembrolizumab,QNC,E54000010,Staffordshire & Stoke on Trent STP,Y60,E40000008,Midlands,63600,mgs,1139794,Population
-2020-12-31,Secondary Care,pembrolizumab,QNQ,E54000034,Frimley Health & Care STP,Y59,E40000005,South East,9550,mgs,746739,Population
-2020-12-31,Secondary Care,pembrolizumab,QNX,E54000053,Sussex Health and Care Partnership,Y59,E40000005,South East,57100,mgs,1711539,Population
-2020-12-31,Secondary Care,pembrolizumab,QOC,E54000011,Shropshire and Telford and Wrekin STP,Y60,E40000008,Midlands,18000,mgs,506737,Population
-2020-12-31,Secondary Care,pembrolizumab,QOP,E54000007,Greater Manchester Health & Social Care Partnership,Y62,E40000010,North West,185925,mgs,2881890,Population
-2020-12-31,Secondary Care,pembrolizumab,QOQ,E54000051,"Humber, Coast and Vale STP",Y63,E40000009,North East and Yorkshire,101600,mgs,1708723,Population
-2020-12-31,Secondary Care,pembrolizumab,QOX,E54000040,"Bath and North East Somerset, Swindon and Wiltshire STP",Y58,E40000006,South West,57850,mgs,929964,Population
-2020-12-31,Secondary Care,pembrolizumab,QPM,E54000020,Northamptonshire STP,Y60,E40000008,Midlands,34300,mgs,740111,Population
-2020-12-31,Secondary Care,pembrolizumab,QR1,E54000043,Gloucestershire STP,Y58,E40000006,South West,25800,mgs,640650,Population
-2020-12-31,Secondary Care,pembrolizumab,QRL,E54000042,Hampshire and the Isle of Wight STP,Y59,E40000005,South East,146490,mgs,1831473,Population
-2020-12-31,Secondary Care,pembrolizumab,QRV,E54000027,North West London Health & Care Partnership STP,Y56,E40000003,London,198900,mgs,2111469,Population
-2020-12-31,Secondary Care,pembrolizumab,QSL,E54000038,Somerset STP,Y58,E40000006,South West,36400,mgs,563851,Population
-2020-12-31,Secondary Care,pembrolizumab,QT1,E54000014,Nottingham and Nottinghamshire Health and Care STP,Y60,E40000008,Midlands,109200,mgs,1052195,Population
-2020-12-31,Secondary Care,pembrolizumab,QT6,E54000036,Cornwall and the Isles of Scilly Health & Social Care Partnership STP,Y58,E40000006,South West,105000,mgs,575525,Population
-2020-12-31,Secondary Care,pembrolizumab,QU9,E54000044,"Buckinghamshire, Oxfordshire and Berkshire West STP",Y59,E40000005,South East,136000,mgs,1723447,Population
-2020-12-31,Secondary Care,pembrolizumab,QUA,E54000016,The Black Country and West Birmingham STP,Y60,E40000008,Midlands,48750,mgs,1380809,Population
-2020-12-31,Secondary Care,pembrolizumab,QUE,E54000021,Cambridgeshire and Peterborough STP,Y61,E40000007,East of England,69800,mgs,896725,Population
-2020-12-31,Secondary Care,pembrolizumab,QUY,E54000039,"Bristol, North Somerset and South Gloucestershire STP",Y58,E40000006,South West,55900,mgs,969256,Population
-2020-12-31,Secondary Care,pembrolizumab,QVV,E54000041,Dorset STP,Y58,E40000006,South West,61600,mgs,776780,Population
-2020-12-31,Secondary Care,pembrolizumab,QWE,E54000031,South West London Health & Care Partnership STP,Y56,E40000003,London,14600,mgs,1509741,Population
-2020-12-31,Secondary Care,pembrolizumab,QWO,E54000054,West Yorkshire and Harrogate Health & Care Partnership STP,Y63,E40000009,North East and Yorkshire,135500,mgs,2396517,Population
-2020-12-31,Secondary Care,pembrolizumab,QWU,E54000018,Coventry and Warwickshire STP,Y60,E40000008,Midlands,54200,mgs,963173,Population
-2020-12-31,Secondary Care,pembrolizumab,QXU,E54000052,Surrey Heartlands Health & Care Partnership STP,Y59,E40000005,South East,83400,mgs,1052425,Population
-2020-12-31,Secondary Care,pembrolizumab,QYG,E54000008,Cheshire and Merseyside STP,Y62,E40000010,North West,366400,mgs,2503902,Population
 2020-12-31,Secondary Care,ribociclib,QE1,E54000048,Lancashire and South Cumbria ICS,Y62,E40000010,North West,616,ADD,1701655,Population
 2020-12-31,Secondary Care,ribociclib,QF7,E54000009,South Yorkshire and Bassetlaw STP,Y63,E40000009,North East and Yorkshire,1381,ADD,1533334,Population
 2020-12-31,Secondary Care,ribociclib,QGH,E54000019,Herefordshire and Worcestershire STP,Y60,E40000008,Midlands,131,ADD,791685,Population
@@ -600,48 +516,6 @@ date,data_source,treatment_name,stp_ods_cd,stp_gss_cd,stp_name,reg_ods_cd,reg_gs
 2021-03-31,Secondary Care,palbociclib,QWU,E54000018,Coventry and Warwickshire STP,Y60,E40000008,Midlands,6048,DDD,963173,Population
 2021-03-31,Secondary Care,palbociclib,QXU,E54000052,Surrey Heartlands Health & Care Partnership STP,Y59,E40000005,South East,10433,DDD,1052425,Population
 2021-03-31,Secondary Care,palbociclib,QYG,E54000008,Cheshire and Merseyside STP,Y62,E40000010,North West,9195,DDD,2503902,Population
-2021-03-31,Secondary Care,pembrolizumab,QE1,E54000048,Lancashire and South Cumbria ICS,Y62,E40000010,North West,176000,mgs,1701655,Population
-2021-03-31,Secondary Care,pembrolizumab,QF7,E54000009,South Yorkshire and Bassetlaw STP,Y63,E40000009,North East and Yorkshire,99025,mgs,1533334,Population
-2021-03-31,Secondary Care,pembrolizumab,QGH,E54000019,Herefordshire and Worcestershire STP,Y60,E40000008,Midlands,48800,mgs,791685,Population
-2021-03-31,Secondary Care,pembrolizumab,QH8,E54000026,Mid and South Essex STP,Y61,E40000007,East of England,111400,mgs,1199296,Population
-2021-03-31,Secondary Care,pembrolizumab,QHG,E54000024,"Bedfordshire, Luton and Milton Keynes STP",Y61,E40000007,East of England,39200,mgs,959098,Population
-2021-03-31,Secondary Care,pembrolizumab,QHL,E54000017,Birmingham and Solihull STP,Y60,E40000008,Midlands,177000,mgs,1179731,Population
-2021-03-31,Secondary Care,pembrolizumab,QHM,E54000050,Cumbria and North East STP,Y63,E40000009,North East and Yorkshire,189700,mgs,3000432,Population
-2021-03-31,Secondary Care,pembrolizumab,QJ2,E54000012,Joined Up Care Derbyshire STP,Y60,E40000008,Midlands,55600,mgs,1030393,Population
-2021-03-31,Secondary Care,pembrolizumab,QJG,E54000023,Suffolk and North East Essex ICS,Y61,E40000007,East of England,36800,mgs,987177,Population
-2021-03-31,Secondary Care,pembrolizumab,QJK,E54000037,Devon STP,Y58,E40000006,South West,1653504,mgs,1209773,Population
-2021-03-31,Secondary Care,pembrolizumab,QJM,E54000013,Lincolnshire STP,Y60,E40000008,Midlands,66800,mgs,766333,Population
-2021-03-31,Secondary Care,pembrolizumab,QK1,E54000015,"Leicester, Leicestershire and Rutland STP",Y60,E40000008,Midlands,75500,mgs,1107597,Population
-2021-03-31,Secondary Care,pembrolizumab,QKK,E54000030,Our Healthier South East London STP,Y56,E40000003,London,120500,mgs,1818226,Population
-2021-03-31,Secondary Care,pembrolizumab,QKS,E54000032,Kent and Medway STP,Y59,E40000005,South East,155600,mgs,1868199,Population
-2021-03-31,Secondary Care,pembrolizumab,QM7,E54000025,Hertfordshire and West Essex STP,Y61,E40000007,East of England,96500,mgs,1488061,Population
-2021-03-31,Secondary Care,pembrolizumab,QMF,E54000029,East London Health & Care Partnership STP,Y56,E40000003,London,115600,mgs,2036470,Population
-2021-03-31,Secondary Care,pembrolizumab,QMJ,E54000028,North London Partners in Health & Care STP,Y56,E40000003,London,61300,mgs,1526582,Population
-2021-03-31,Secondary Care,pembrolizumab,QMM,E54000022,Norfolk and Waveney Health & Care Partnership STP,Y61,E40000007,East of England,86650,mgs,1032661,Population
-2021-03-31,Secondary Care,pembrolizumab,QNC,E54000010,Staffordshire & Stoke on Trent STP,Y60,E40000008,Midlands,66600,mgs,1139794,Population
-2021-03-31,Secondary Care,pembrolizumab,QNQ,E54000034,Frimley Health & Care STP,Y59,E40000005,South East,4600,mgs,746739,Population
-2021-03-31,Secondary Care,pembrolizumab,QNX,E54000053,Sussex Health and Care Partnership,Y59,E40000005,South East,68800,mgs,1711539,Population
-2021-03-31,Secondary Care,pembrolizumab,QOC,E54000011,Shropshire and Telford and Wrekin STP,Y60,E40000008,Midlands,18600,mgs,506737,Population
-2021-03-31,Secondary Care,pembrolizumab,QOP,E54000007,Greater Manchester Health & Social Care Partnership,Y62,E40000010,North West,179600,mgs,2881890,Population
-2021-03-31,Secondary Care,pembrolizumab,QOQ,E54000051,"Humber, Coast and Vale STP",Y63,E40000009,North East and Yorkshire,85000,mgs,1708723,Population
-2021-03-31,Secondary Care,pembrolizumab,QOX,E54000040,"Bath and North East Somerset, Swindon and Wiltshire STP",Y58,E40000006,South West,58375,mgs,929964,Population
-2021-03-31,Secondary Care,pembrolizumab,QPM,E54000020,Northamptonshire STP,Y60,E40000008,Midlands,33000,mgs,740111,Population
-2021-03-31,Secondary Care,pembrolizumab,QR1,E54000043,Gloucestershire STP,Y58,E40000006,South West,24200,mgs,640650,Population
-2021-03-31,Secondary Care,pembrolizumab,QRL,E54000042,Hampshire and the Isle of Wight STP,Y59,E40000005,South East,148570,mgs,1831473,Population
-2021-03-31,Secondary Care,pembrolizumab,QRV,E54000027,North West London Health & Care Partnership STP,Y56,E40000003,London,213300,mgs,2111469,Population
-2021-03-31,Secondary Care,pembrolizumab,QSL,E54000038,Somerset STP,Y58,E40000006,South West,43500,mgs,563851,Population
-2021-03-31,Secondary Care,pembrolizumab,QT1,E54000014,Nottingham and Nottinghamshire Health and Care STP,Y60,E40000008,Midlands,90800,mgs,1052195,Population
-2021-03-31,Secondary Care,pembrolizumab,QT6,E54000036,Cornwall and the Isles of Scilly Health & Social Care Partnership STP,Y58,E40000006,South West,89400,mgs,575525,Population
-2021-03-31,Secondary Care,pembrolizumab,QU9,E54000044,"Buckinghamshire, Oxfordshire and Berkshire West STP",Y59,E40000005,South East,104400,mgs,1723447,Population
-2021-03-31,Secondary Care,pembrolizumab,QUA,E54000016,The Black Country and West Birmingham STP,Y60,E40000008,Midlands,48800,mgs,1380809,Population
-2021-03-31,Secondary Care,pembrolizumab,QUE,E54000021,Cambridgeshire and Peterborough STP,Y61,E40000007,East of England,72600,mgs,896725,Population
-2021-03-31,Secondary Care,pembrolizumab,QUY,E54000039,"Bristol, North Somerset and South Gloucestershire STP",Y58,E40000006,South West,59000,mgs,969256,Population
-2021-03-31,Secondary Care,pembrolizumab,QVV,E54000041,Dorset STP,Y58,E40000006,South West,58400,mgs,776780,Population
-2021-03-31,Secondary Care,pembrolizumab,QWE,E54000031,South West London Health & Care Partnership STP,Y56,E40000003,London,17800,mgs,1509741,Population
-2021-03-31,Secondary Care,pembrolizumab,QWO,E54000054,West Yorkshire and Harrogate Health & Care Partnership STP,Y63,E40000009,North East and Yorkshire,141750,mgs,2396517,Population
-2021-03-31,Secondary Care,pembrolizumab,QWU,E54000018,Coventry and Warwickshire STP,Y60,E40000008,Midlands,47650,mgs,963173,Population
-2021-03-31,Secondary Care,pembrolizumab,QXU,E54000052,Surrey Heartlands Health & Care Partnership STP,Y59,E40000005,South East,94400,mgs,1052425,Population
-2021-03-31,Secondary Care,pembrolizumab,QYG,E54000008,Cheshire and Merseyside STP,Y62,E40000010,North West,408800,mgs,2503902,Population
 2021-03-31,Secondary Care,ribociclib,QE1,E54000048,Lancashire and South Cumbria ICS,Y62,E40000010,North West,793,ADD,1701655,Population
 2021-03-31,Secondary Care,ribociclib,QF7,E54000009,South Yorkshire and Bassetlaw STP,Y63,E40000009,North East and Yorkshire,1195,ADD,1533334,Population
 2021-03-31,Secondary Care,ribociclib,QGH,E54000019,Herefordshire and Worcestershire STP,Y60,E40000008,Midlands,112,ADD,791685,Population
@@ -846,48 +720,6 @@ date,data_source,treatment_name,stp_ods_cd,stp_gss_cd,stp_name,reg_ods_cd,reg_gs
 2021-06-30,Secondary Care,palbociclib,QWU,E54000018,Coventry and Warwickshire STP,Y60,E40000008,Midlands,5727,DDD,963173,Population
 2021-06-30,Secondary Care,palbociclib,QXU,E54000052,Surrey Heartlands Health & Care Partnership STP,Y59,E40000005,South East,10111,DDD,1052425,Population
 2021-06-30,Secondary Care,palbociclib,QYG,E54000008,Cheshire and Merseyside STP,Y62,E40000010,North West,7148,DDD,2503902,Population
-2021-06-30,Secondary Care,pembrolizumab,QE1,E54000048,Lancashire and South Cumbria ICS,Y62,E40000010,North West,185800,mgs,1701655,Population
-2021-06-30,Secondary Care,pembrolizumab,QF7,E54000009,South Yorkshire and Bassetlaw STP,Y63,E40000009,North East and Yorkshire,110600,mgs,1533334,Population
-2021-06-30,Secondary Care,pembrolizumab,QGH,E54000019,Herefordshire and Worcestershire STP,Y60,E40000008,Midlands,55600,mgs,791685,Population
-2021-06-30,Secondary Care,pembrolizumab,QH8,E54000026,Mid and South Essex STP,Y61,E40000007,East of England,135000,mgs,1199296,Population
-2021-06-30,Secondary Care,pembrolizumab,QHG,E54000024,"Bedfordshire, Luton and Milton Keynes STP",Y61,E40000007,East of England,40600,mgs,959098,Population
-2021-06-30,Secondary Care,pembrolizumab,QHL,E54000017,Birmingham and Solihull STP,Y60,E40000008,Midlands,173700,mgs,1179731,Population
-2021-06-30,Secondary Care,pembrolizumab,QHM,E54000050,Cumbria and North East STP,Y63,E40000009,North East and Yorkshire,211500,mgs,3000432,Population
-2021-06-30,Secondary Care,pembrolizumab,QJ2,E54000012,Joined Up Care Derbyshire STP,Y60,E40000008,Midlands,49400,mgs,1030393,Population
-2021-06-30,Secondary Care,pembrolizumab,QJG,E54000023,Suffolk and North East Essex ICS,Y61,E40000007,East of England,37850,mgs,987177,Population
-2021-06-30,Secondary Care,pembrolizumab,QJK,E54000037,Devon STP,Y58,E40000006,South West,729100,mgs,1209773,Population
-2021-06-30,Secondary Care,pembrolizumab,QJM,E54000013,Lincolnshire STP,Y60,E40000008,Midlands,62400,mgs,766333,Population
-2021-06-30,Secondary Care,pembrolizumab,QK1,E54000015,"Leicester, Leicestershire and Rutland STP",Y60,E40000008,Midlands,75900,mgs,1107597,Population
-2021-06-30,Secondary Care,pembrolizumab,QKK,E54000030,Our Healthier South East London STP,Y56,E40000003,London,127800,mgs,1818226,Population
-2021-06-30,Secondary Care,pembrolizumab,QKS,E54000032,Kent and Medway STP,Y59,E40000005,South East,161800,mgs,1868199,Population
-2021-06-30,Secondary Care,pembrolizumab,QM7,E54000025,Hertfordshire and West Essex STP,Y61,E40000007,East of England,98700,mgs,1488061,Population
-2021-06-30,Secondary Care,pembrolizumab,QMF,E54000029,East London Health & Care Partnership STP,Y56,E40000003,London,114700,mgs,2036470,Population
-2021-06-30,Secondary Care,pembrolizumab,QMJ,E54000028,North London Partners in Health & Care STP,Y56,E40000003,London,54700,mgs,1526582,Population
-2021-06-30,Secondary Care,pembrolizumab,QMM,E54000022,Norfolk and Waveney Health & Care Partnership STP,Y61,E40000007,East of England,83300,mgs,1032661,Population
-2021-06-30,Secondary Care,pembrolizumab,QNC,E54000010,Staffordshire & Stoke on Trent STP,Y60,E40000008,Midlands,63200,mgs,1139794,Population
-2021-06-30,Secondary Care,pembrolizumab,QNQ,E54000034,Frimley Health & Care STP,Y59,E40000005,South East,17800,mgs,746739,Population
-2021-06-30,Secondary Care,pembrolizumab,QNX,E54000053,Sussex Health and Care Partnership,Y59,E40000005,South East,72950,mgs,1711539,Population
-2021-06-30,Secondary Care,pembrolizumab,QOC,E54000011,Shropshire and Telford and Wrekin STP,Y60,E40000008,Midlands,21200,mgs,506737,Population
-2021-06-30,Secondary Care,pembrolizumab,QOP,E54000007,Greater Manchester Health & Social Care Partnership,Y62,E40000010,North West,166400,mgs,2881890,Population
-2021-06-30,Secondary Care,pembrolizumab,QOQ,E54000051,"Humber, Coast and Vale STP",Y63,E40000009,North East and Yorkshire,87400,mgs,1708723,Population
-2021-06-30,Secondary Care,pembrolizumab,QOX,E54000040,"Bath and North East Somerset, Swindon and Wiltshire STP",Y58,E40000006,South West,70100,mgs,929964,Population
-2021-06-30,Secondary Care,pembrolizumab,QPM,E54000020,Northamptonshire STP,Y60,E40000008,Midlands,32450,mgs,740111,Population
-2021-06-30,Secondary Care,pembrolizumab,QR1,E54000043,Gloucestershire STP,Y58,E40000006,South West,24800,mgs,640650,Population
-2021-06-30,Secondary Care,pembrolizumab,QRL,E54000042,Hampshire and the Isle of Wight STP,Y59,E40000005,South East,157890,mgs,1831473,Population
-2021-06-30,Secondary Care,pembrolizumab,QRV,E54000027,North West London Health & Care Partnership STP,Y56,E40000003,London,214600,mgs,2111469,Population
-2021-06-30,Secondary Care,pembrolizumab,QSL,E54000038,Somerset STP,Y58,E40000006,South West,44800,mgs,563851,Population
-2021-06-30,Secondary Care,pembrolizumab,QT1,E54000014,Nottingham and Nottinghamshire Health and Care STP,Y60,E40000008,Midlands,74100,mgs,1052195,Population
-2021-06-30,Secondary Care,pembrolizumab,QT6,E54000036,Cornwall and the Isles of Scilly Health & Social Care Partnership STP,Y58,E40000006,South West,87500,mgs,575525,Population
-2021-06-30,Secondary Care,pembrolizumab,QU9,E54000044,"Buckinghamshire, Oxfordshire and Berkshire West STP",Y59,E40000005,South East,136200,mgs,1723447,Population
-2021-06-30,Secondary Care,pembrolizumab,QUA,E54000016,The Black Country and West Birmingham STP,Y60,E40000008,Midlands,52350,mgs,1380809,Population
-2021-06-30,Secondary Care,pembrolizumab,QUE,E54000021,Cambridgeshire and Peterborough STP,Y61,E40000007,East of England,78100,mgs,896725,Population
-2021-06-30,Secondary Care,pembrolizumab,QUY,E54000039,"Bristol, North Somerset and South Gloucestershire STP",Y58,E40000006,South West,54800,mgs,969256,Population
-2021-06-30,Secondary Care,pembrolizumab,QVV,E54000041,Dorset STP,Y58,E40000006,South West,67400,mgs,776780,Population
-2021-06-30,Secondary Care,pembrolizumab,QWE,E54000031,South West London Health & Care Partnership STP,Y56,E40000003,London,25400,mgs,1509741,Population
-2021-06-30,Secondary Care,pembrolizumab,QWO,E54000054,West Yorkshire and Harrogate Health & Care Partnership STP,Y63,E40000009,North East and Yorkshire,164100,mgs,2396517,Population
-2021-06-30,Secondary Care,pembrolizumab,QWU,E54000018,Coventry and Warwickshire STP,Y60,E40000008,Midlands,39200,mgs,963173,Population
-2021-06-30,Secondary Care,pembrolizumab,QXU,E54000052,Surrey Heartlands Health & Care Partnership STP,Y59,E40000005,South East,93400,mgs,1052425,Population
-2021-06-30,Secondary Care,pembrolizumab,QYG,E54000008,Cheshire and Merseyside STP,Y62,E40000010,North West,378800,mgs,2503902,Population
 2021-06-30,Secondary Care,ribociclib,QE1,E54000048,Lancashire and South Cumbria ICS,Y62,E40000010,North West,756,ADD,1701655,Population
 2021-06-30,Secondary Care,ribociclib,QF7,E54000009,South Yorkshire and Bassetlaw STP,Y63,E40000009,North East and Yorkshire,1139,ADD,1533334,Population
 2021-06-30,Secondary Care,ribociclib,QGH,E54000019,Herefordshire and Worcestershire STP,Y60,E40000008,Midlands,47,ADD,791685,Population
@@ -1117,48 +949,6 @@ date,data_source,treatment_name,stp_ods_cd,stp_gss_cd,stp_name,reg_ods_cd,reg_gs
 2021-09-30,Secondary Care,palbociclib,QWU,E54000018,Coventry and Warwickshire STP,Y60,E40000008,Midlands,5982,DDD,963173,Population
 2021-09-30,Secondary Care,palbociclib,QXU,E54000052,Surrey Heartlands Health & Care Partnership STP,Y59,E40000005,South East,9472,DDD,1052425,Population
 2021-09-30,Secondary Care,palbociclib,QYG,E54000008,Cheshire and Merseyside STP,Y62,E40000010,North West,6423,DDD,2503902,Population
-2021-09-30,Secondary Care,pembrolizumab,QE1,E54000048,Lancashire and South Cumbria ICS,Y62,E40000010,North West,186000,mgs,1701655,Population
-2021-09-30,Secondary Care,pembrolizumab,QF7,E54000009,South Yorkshire and Bassetlaw STP,Y63,E40000009,North East and Yorkshire,121300,mgs,1533334,Population
-2021-09-30,Secondary Care,pembrolizumab,QGH,E54000019,Herefordshire and Worcestershire STP,Y60,E40000008,Midlands,58200,mgs,791685,Population
-2021-09-30,Secondary Care,pembrolizumab,QH8,E54000026,Mid and South Essex STP,Y61,E40000007,East of England,131700,mgs,1199296,Population
-2021-09-30,Secondary Care,pembrolizumab,QHG,E54000024,"Bedfordshire, Luton and Milton Keynes STP",Y61,E40000007,East of England,35000,mgs,959098,Population
-2021-09-30,Secondary Care,pembrolizumab,QHL,E54000017,Birmingham and Solihull STP,Y60,E40000008,Midlands,171000,mgs,1179731,Population
-2021-09-30,Secondary Care,pembrolizumab,QHM,E54000050,Cumbria and North East STP,Y63,E40000009,North East and Yorkshire,217100,mgs,3000432,Population
-2021-09-30,Secondary Care,pembrolizumab,QJ2,E54000012,Joined Up Care Derbyshire STP,Y60,E40000008,Midlands,41600,mgs,1030393,Population
-2021-09-30,Secondary Care,pembrolizumab,QJG,E54000023,Suffolk and North East Essex ICS,Y61,E40000007,East of England,50500,mgs,987177,Population
-2021-09-30,Secondary Care,pembrolizumab,QJK,E54000037,Devon STP,Y58,E40000006,South West,150900,mgs,1209773,Population
-2021-09-30,Secondary Care,pembrolizumab,QJM,E54000013,Lincolnshire STP,Y60,E40000008,Midlands,62200,mgs,766333,Population
-2021-09-30,Secondary Care,pembrolizumab,QK1,E54000015,"Leicester, Leicestershire and Rutland STP",Y60,E40000008,Midlands,79000,mgs,1107597,Population
-2021-09-30,Secondary Care,pembrolizumab,QKK,E54000030,Our Healthier South East London STP,Y56,E40000003,London,130200,mgs,1818226,Population
-2021-09-30,Secondary Care,pembrolizumab,QKS,E54000032,Kent and Medway STP,Y59,E40000005,South East,181000,mgs,1868199,Population
-2021-09-30,Secondary Care,pembrolizumab,QM7,E54000025,Hertfordshire and West Essex STP,Y61,E40000007,East of England,99900,mgs,1488061,Population
-2021-09-30,Secondary Care,pembrolizumab,QMF,E54000029,East London Health & Care Partnership STP,Y56,E40000003,London,103100,mgs,2036470,Population
-2021-09-30,Secondary Care,pembrolizumab,QMJ,E54000028,North London Partners in Health & Care STP,Y56,E40000003,London,57600,mgs,1526582,Population
-2021-09-30,Secondary Care,pembrolizumab,QMM,E54000022,Norfolk and Waveney Health & Care Partnership STP,Y61,E40000007,East of England,79600,mgs,1032661,Population
-2021-09-30,Secondary Care,pembrolizumab,QNC,E54000010,Staffordshire & Stoke on Trent STP,Y60,E40000008,Midlands,68000,mgs,1139794,Population
-2021-09-30,Secondary Care,pembrolizumab,QNQ,E54000034,Frimley Health & Care STP,Y59,E40000005,South East,19200,mgs,746739,Population
-2021-09-30,Secondary Care,pembrolizumab,QNX,E54000053,Sussex Health and Care Partnership,Y59,E40000005,South East,82050,mgs,1711539,Population
-2021-09-30,Secondary Care,pembrolizumab,QOC,E54000011,Shropshire and Telford and Wrekin STP,Y60,E40000008,Midlands,17600,mgs,506737,Population
-2021-09-30,Secondary Care,pembrolizumab,QOP,E54000007,Greater Manchester Health & Social Care Partnership,Y62,E40000010,North West,158650,mgs,2881890,Population
-2021-09-30,Secondary Care,pembrolizumab,QOQ,E54000051,"Humber, Coast and Vale STP",Y63,E40000009,North East and Yorkshire,91900,mgs,1708723,Population
-2021-09-30,Secondary Care,pembrolizumab,QOX,E54000040,"Bath and North East Somerset, Swindon and Wiltshire STP",Y58,E40000006,South West,68475,mgs,929964,Population
-2021-09-30,Secondary Care,pembrolizumab,QPM,E54000020,Northamptonshire STP,Y60,E40000008,Midlands,33200,mgs,740111,Population
-2021-09-30,Secondary Care,pembrolizumab,QR1,E54000043,Gloucestershire STP,Y58,E40000006,South West,31400,mgs,640650,Population
-2021-09-30,Secondary Care,pembrolizumab,QRL,E54000042,Hampshire and the Isle of Wight STP,Y59,E40000005,South East,173420,mgs,1831473,Population
-2021-09-30,Secondary Care,pembrolizumab,QRV,E54000027,North West London Health & Care Partnership STP,Y56,E40000003,London,224100,mgs,2111469,Population
-2021-09-30,Secondary Care,pembrolizumab,QSL,E54000038,Somerset STP,Y58,E40000006,South West,39200,mgs,563851,Population
-2021-09-30,Secondary Care,pembrolizumab,QT1,E54000014,Nottingham and Nottinghamshire Health and Care STP,Y60,E40000008,Midlands,94900,mgs,1052195,Population
-2021-09-30,Secondary Care,pembrolizumab,QT6,E54000036,Cornwall and the Isles of Scilly Health & Social Care Partnership STP,Y58,E40000006,South West,84300,mgs,575525,Population
-2021-09-30,Secondary Care,pembrolizumab,QU9,E54000044,"Buckinghamshire, Oxfordshire and Berkshire West STP",Y59,E40000005,South East,136400,mgs,1723447,Population
-2021-09-30,Secondary Care,pembrolizumab,QUA,E54000016,The Black Country and West Birmingham STP,Y60,E40000008,Midlands,47000,mgs,1380809,Population
-2021-09-30,Secondary Care,pembrolizumab,QUE,E54000021,Cambridgeshire and Peterborough STP,Y61,E40000007,East of England,77400,mgs,896725,Population
-2021-09-30,Secondary Care,pembrolizumab,QUY,E54000039,"Bristol, North Somerset and South Gloucestershire STP",Y58,E40000006,South West,61000,mgs,969256,Population
-2021-09-30,Secondary Care,pembrolizumab,QVV,E54000041,Dorset STP,Y58,E40000006,South West,62100,mgs,776780,Population
-2021-09-30,Secondary Care,pembrolizumab,QWE,E54000031,South West London Health & Care Partnership STP,Y56,E40000003,London,23800,mgs,1509741,Population
-2021-09-30,Secondary Care,pembrolizumab,QWO,E54000054,West Yorkshire and Harrogate Health & Care Partnership STP,Y63,E40000009,North East and Yorkshire,171300,mgs,2396517,Population
-2021-09-30,Secondary Care,pembrolizumab,QWU,E54000018,Coventry and Warwickshire STP,Y60,E40000008,Midlands,38600,mgs,963173,Population
-2021-09-30,Secondary Care,pembrolizumab,QXU,E54000052,Surrey Heartlands Health & Care Partnership STP,Y59,E40000005,South East,112600,mgs,1052425,Population
-2021-09-30,Secondary Care,pembrolizumab,QYG,E54000008,Cheshire and Merseyside STP,Y62,E40000010,North West,544800,mgs,2503902,Population
 2021-09-30,Secondary Care,ribociclib,QE1,E54000048,Lancashire and South Cumbria ICS,Y62,E40000010,North West,756,ADD,1701655,Population
 2021-09-30,Secondary Care,ribociclib,QF7,E54000009,South Yorkshire and Bassetlaw STP,Y63,E40000009,North East and Yorkshire,933,ADD,1533334,Population
 2021-09-30,Secondary Care,ribociclib,QGH,E54000019,Herefordshire and Worcestershire STP,Y60,E40000008,Midlands,47,ADD,791685,Population
@@ -1398,48 +1188,6 @@ date,data_source,treatment_name,stp_ods_cd,stp_gss_cd,stp_name,reg_ods_cd,reg_gs
 2021-12-31,Secondary Care,palbociclib,QWU,E54000018,Coventry and Warwickshire STP,Y60,E40000008,Midlands,6406,DDD,963173,Population
 2021-12-31,Secondary Care,palbociclib,QXU,E54000052,Surrey Heartlands Health & Care Partnership STP,Y59,E40000005,South East,11561,DDD,1052425,Population
 2021-12-31,Secondary Care,palbociclib,QYG,E54000008,Cheshire and Merseyside STP,Y62,E40000010,North West,6999,DDD,2503902,Population
-2021-12-31,Secondary Care,pembrolizumab,QE1,E54000048,Lancashire and South Cumbria ICS,Y62,E40000010,North West,184100,mgs,1701655,Population
-2021-12-31,Secondary Care,pembrolizumab,QF7,E54000009,South Yorkshire and Bassetlaw STP,Y63,E40000009,North East and Yorkshire,116750,mgs,1533334,Population
-2021-12-31,Secondary Care,pembrolizumab,QGH,E54000019,Herefordshire and Worcestershire STP,Y60,E40000008,Midlands,60600,mgs,791685,Population
-2021-12-31,Secondary Care,pembrolizumab,QH8,E54000026,Mid and South Essex STP,Y61,E40000007,East of England,130300,mgs,1199296,Population
-2021-12-31,Secondary Care,pembrolizumab,QHG,E54000024,"Bedfordshire, Luton and Milton Keynes STP",Y61,E40000007,East of England,40000,mgs,959098,Population
-2021-12-31,Secondary Care,pembrolizumab,QHL,E54000017,Birmingham and Solihull STP,Y60,E40000008,Midlands,189200,mgs,1179731,Population
-2021-12-31,Secondary Care,pembrolizumab,QHM,E54000050,Cumbria and North East STP,Y63,E40000009,North East and Yorkshire,246600,mgs,3000432,Population
-2021-12-31,Secondary Care,pembrolizumab,QJ2,E54000012,Joined Up Care Derbyshire STP,Y60,E40000008,Midlands,39800,mgs,1030393,Population
-2021-12-31,Secondary Care,pembrolizumab,QJG,E54000023,Suffolk and North East Essex ICS,Y61,E40000007,East of England,60400,mgs,987177,Population
-2021-12-31,Secondary Care,pembrolizumab,QJK,E54000037,Devon STP,Y58,E40000006,South West,158100,mgs,1209773,Population
-2021-12-31,Secondary Care,pembrolizumab,QJM,E54000013,Lincolnshire STP,Y60,E40000008,Midlands,62200,mgs,766333,Population
-2021-12-31,Secondary Care,pembrolizumab,QK1,E54000015,"Leicester, Leicestershire and Rutland STP",Y60,E40000008,Midlands,70200,mgs,1107597,Population
-2021-12-31,Secondary Care,pembrolizumab,QKK,E54000030,Our Healthier South East London STP,Y56,E40000003,London,125100,mgs,1818226,Population
-2021-12-31,Secondary Care,pembrolizumab,QKS,E54000032,Kent and Medway STP,Y59,E40000005,South East,182700,mgs,1868199,Population
-2021-12-31,Secondary Care,pembrolizumab,QM7,E54000025,Hertfordshire and West Essex STP,Y61,E40000007,East of England,110400,mgs,1488061,Population
-2021-12-31,Secondary Care,pembrolizumab,QMF,E54000029,East London Health & Care Partnership STP,Y56,E40000003,London,109800,mgs,2036470,Population
-2021-12-31,Secondary Care,pembrolizumab,QMJ,E54000028,North London Partners in Health & Care STP,Y56,E40000003,London,50000,mgs,1526582,Population
-2021-12-31,Secondary Care,pembrolizumab,QMM,E54000022,Norfolk and Waveney Health & Care Partnership STP,Y61,E40000007,East of England,84800,mgs,1032661,Population
-2021-12-31,Secondary Care,pembrolizumab,QNC,E54000010,Staffordshire & Stoke on Trent STP,Y60,E40000008,Midlands,64800,mgs,1139794,Population
-2021-12-31,Secondary Care,pembrolizumab,QNQ,E54000034,Frimley Health & Care STP,Y59,E40000005,South East,14400,mgs,746739,Population
-2021-12-31,Secondary Care,pembrolizumab,QNX,E54000053,Sussex Health and Care Partnership,Y59,E40000005,South East,80100,mgs,1711539,Population
-2021-12-31,Secondary Care,pembrolizumab,QOC,E54000011,Shropshire and Telford and Wrekin STP,Y60,E40000008,Midlands,18200,mgs,506737,Population
-2021-12-31,Secondary Care,pembrolizumab,QOP,E54000007,Greater Manchester Health & Social Care Partnership,Y62,E40000010,North West,151200,mgs,2881890,Population
-2021-12-31,Secondary Care,pembrolizumab,QOQ,E54000051,"Humber, Coast and Vale STP",Y63,E40000009,North East and Yorkshire,116300,mgs,1708723,Population
-2021-12-31,Secondary Care,pembrolizumab,QOX,E54000040,"Bath and North East Somerset, Swindon and Wiltshire STP",Y58,E40000006,South West,69225,mgs,929964,Population
-2021-12-31,Secondary Care,pembrolizumab,QPM,E54000020,Northamptonshire STP,Y60,E40000008,Midlands,39000,mgs,740111,Population
-2021-12-31,Secondary Care,pembrolizumab,QR1,E54000043,Gloucestershire STP,Y58,E40000006,South West,35200,mgs,640650,Population
-2021-12-31,Secondary Care,pembrolizumab,QRL,E54000042,Hampshire and the Isle of Wight STP,Y59,E40000005,South East,175860,mgs,1831473,Population
-2021-12-31,Secondary Care,pembrolizumab,QRV,E54000027,North West London Health & Care Partnership STP,Y56,E40000003,London,210400,mgs,2111469,Population
-2021-12-31,Secondary Care,pembrolizumab,QSL,E54000038,Somerset STP,Y58,E40000006,South West,30600,mgs,563851,Population
-2021-12-31,Secondary Care,pembrolizumab,QT1,E54000014,Nottingham and Nottinghamshire Health and Care STP,Y60,E40000008,Midlands,90300,mgs,1052195,Population
-2021-12-31,Secondary Care,pembrolizumab,QT6,E54000036,Cornwall and the Isles of Scilly Health & Social Care Partnership STP,Y58,E40000006,South West,95600,mgs,575525,Population
-2021-12-31,Secondary Care,pembrolizumab,QU9,E54000044,"Buckinghamshire, Oxfordshire and Berkshire West STP",Y59,E40000005,South East,136400,mgs,1723447,Population
-2021-12-31,Secondary Care,pembrolizumab,QUA,E54000016,The Black Country and West Birmingham STP,Y60,E40000008,Midlands,54200,mgs,1380809,Population
-2021-12-31,Secondary Care,pembrolizumab,QUE,E54000021,Cambridgeshire and Peterborough STP,Y61,E40000007,East of England,78200,mgs,896725,Population
-2021-12-31,Secondary Care,pembrolizumab,QUY,E54000039,"Bristol, North Somerset and South Gloucestershire STP",Y58,E40000006,South West,56400,mgs,969256,Population
-2021-12-31,Secondary Care,pembrolizumab,QVV,E54000041,Dorset STP,Y58,E40000006,South West,60500,mgs,776780,Population
-2021-12-31,Secondary Care,pembrolizumab,QWE,E54000031,South West London Health & Care Partnership STP,Y56,E40000003,London,22700,mgs,1509741,Population
-2021-12-31,Secondary Care,pembrolizumab,QWO,E54000054,West Yorkshire and Harrogate Health & Care Partnership STP,Y63,E40000009,North East and Yorkshire,178000,mgs,2396517,Population
-2021-12-31,Secondary Care,pembrolizumab,QWU,E54000018,Coventry and Warwickshire STP,Y60,E40000008,Midlands,52800,mgs,963173,Population
-2021-12-31,Secondary Care,pembrolizumab,QXU,E54000052,Surrey Heartlands Health & Care Partnership STP,Y59,E40000005,South East,104000,mgs,1052425,Population
-2021-12-31,Secondary Care,pembrolizumab,QYG,E54000008,Cheshire and Merseyside STP,Y62,E40000010,North West,441100,mgs,2503902,Population
 2021-12-31,Secondary Care,ribociclib,QE1,E54000048,Lancashire and South Cumbria ICS,Y62,E40000010,North West,700,ADD,1701655,Population
 2021-12-31,Secondary Care,ribociclib,QF7,E54000009,South Yorkshire and Bassetlaw STP,Y63,E40000009,North East and Yorkshire,933,ADD,1533334,Population
 2021-12-31,Secondary Care,ribociclib,QGH,E54000019,Herefordshire and Worcestershire STP,Y60,E40000008,Midlands,37,ADD,791685,Population
@@ -1685,48 +1433,6 @@ date,data_source,treatment_name,stp_ods_cd,stp_gss_cd,stp_name,reg_ods_cd,reg_gs
 2022-03-31,Secondary Care,palbociclib,QWU,E54000018,Coventry and Warwickshire STP,Y60,E40000008,Midlands,6981,DDD,963173,Population
 2022-03-31,Secondary Care,palbociclib,QXU,E54000052,Surrey Heartlands Health & Care Partnership STP,Y59,E40000005,South East,11086,DDD,1052425,Population
 2022-03-31,Secondary Care,palbociclib,QYG,E54000008,Cheshire and Merseyside STP,Y62,E40000010,North West,5126,DDD,2503902,Population
-2022-03-31,Secondary Care,pembrolizumab,QE1,E54000048,Lancashire and South Cumbria ICS,Y62,E40000010,North West,177900,mgs,1701655,Population
-2022-03-31,Secondary Care,pembrolizumab,QF7,E54000009,South Yorkshire and Bassetlaw STP,Y63,E40000009,North East and Yorkshire,131400,mgs,1533334,Population
-2022-03-31,Secondary Care,pembrolizumab,QGH,E54000019,Herefordshire and Worcestershire STP,Y60,E40000008,Midlands,57400,mgs,791685,Population
-2022-03-31,Secondary Care,pembrolizumab,QH8,E54000026,Mid and South Essex STP,Y61,E40000007,East of England,140800,mgs,1199296,Population
-2022-03-31,Secondary Care,pembrolizumab,QHG,E54000024,"Bedfordshire, Luton and Milton Keynes STP",Y61,E40000007,East of England,38600,mgs,959098,Population
-2022-03-31,Secondary Care,pembrolizumab,QHL,E54000017,Birmingham and Solihull STP,Y60,E40000008,Midlands,190000,mgs,1179731,Population
-2022-03-31,Secondary Care,pembrolizumab,QHM,E54000050,Cumbria and North East STP,Y63,E40000009,North East and Yorkshire,241100,mgs,3000432,Population
-2022-03-31,Secondary Care,pembrolizumab,QJ2,E54000012,Joined Up Care Derbyshire STP,Y60,E40000008,Midlands,53200,mgs,1030393,Population
-2022-03-31,Secondary Care,pembrolizumab,QJG,E54000023,Suffolk and North East Essex ICS,Y61,E40000007,East of England,59100,mgs,987177,Population
-2022-03-31,Secondary Care,pembrolizumab,QJK,E54000037,Devon STP,Y58,E40000006,South West,382900,mgs,1209773,Population
-2022-03-31,Secondary Care,pembrolizumab,QJM,E54000013,Lincolnshire STP,Y60,E40000008,Midlands,63800,mgs,766333,Population
-2022-03-31,Secondary Care,pembrolizumab,QK1,E54000015,"Leicester, Leicestershire and Rutland STP",Y60,E40000008,Midlands,61300,mgs,1107597,Population
-2022-03-31,Secondary Care,pembrolizumab,QKK,E54000030,Our Healthier South East London STP,Y56,E40000003,London,128300,mgs,1818226,Population
-2022-03-31,Secondary Care,pembrolizumab,QKS,E54000032,Kent and Medway STP,Y59,E40000005,South East,178500,mgs,1868199,Population
-2022-03-31,Secondary Care,pembrolizumab,QM7,E54000025,Hertfordshire and West Essex STP,Y61,E40000007,East of England,104600,mgs,1488061,Population
-2022-03-31,Secondary Care,pembrolizumab,QMF,E54000029,East London Health & Care Partnership STP,Y56,E40000003,London,111900,mgs,2036470,Population
-2022-03-31,Secondary Care,pembrolizumab,QMJ,E54000028,North London Partners in Health & Care STP,Y56,E40000003,London,46800,mgs,1526582,Population
-2022-03-31,Secondary Care,pembrolizumab,QMM,E54000022,Norfolk and Waveney Health & Care Partnership STP,Y61,E40000007,East of England,77900,mgs,1032661,Population
-2022-03-31,Secondary Care,pembrolizumab,QNC,E54000010,Staffordshire & Stoke on Trent STP,Y60,E40000008,Midlands,61800,mgs,1139794,Population
-2022-03-31,Secondary Care,pembrolizumab,QNQ,E54000034,Frimley Health & Care STP,Y59,E40000005,South East,13800,mgs,746739,Population
-2022-03-31,Secondary Care,pembrolizumab,QNX,E54000053,Sussex Health and Care Partnership,Y59,E40000005,South East,73300,mgs,1711539,Population
-2022-03-31,Secondary Care,pembrolizumab,QOC,E54000011,Shropshire and Telford and Wrekin STP,Y60,E40000008,Midlands,20600,mgs,506737,Population
-2022-03-31,Secondary Care,pembrolizumab,QOP,E54000007,Greater Manchester Health & Social Care Partnership,Y62,E40000010,North West,155300,mgs,2881890,Population
-2022-03-31,Secondary Care,pembrolizumab,QOQ,E54000051,"Humber, Coast and Vale STP",Y63,E40000009,North East and Yorkshire,97500,mgs,1708723,Population
-2022-03-31,Secondary Care,pembrolizumab,QOX,E54000040,"Bath and North East Somerset, Swindon and Wiltshire STP",Y58,E40000006,South West,75000,mgs,929964,Population
-2022-03-31,Secondary Care,pembrolizumab,QPM,E54000020,Northamptonshire STP,Y60,E40000008,Midlands,44800,mgs,740111,Population
-2022-03-31,Secondary Care,pembrolizumab,QR1,E54000043,Gloucestershire STP,Y58,E40000006,South West,32800,mgs,640650,Population
-2022-03-31,Secondary Care,pembrolizumab,QRL,E54000042,Hampshire and the Isle of Wight STP,Y59,E40000005,South East,185600,mgs,1831473,Population
-2022-03-31,Secondary Care,pembrolizumab,QRV,E54000027,North West London Health & Care Partnership STP,Y56,E40000003,London,229600,mgs,2111469,Population
-2022-03-31,Secondary Care,pembrolizumab,QSL,E54000038,Somerset STP,Y58,E40000006,South West,46800,mgs,563851,Population
-2022-03-31,Secondary Care,pembrolizumab,QT1,E54000014,Nottingham and Nottinghamshire Health and Care STP,Y60,E40000008,Midlands,95500,mgs,1052195,Population
-2022-03-31,Secondary Care,pembrolizumab,QT6,E54000036,Cornwall and the Isles of Scilly Health & Social Care Partnership STP,Y58,E40000006,South West,101800,mgs,575525,Population
-2022-03-31,Secondary Care,pembrolizumab,QU9,E54000044,"Buckinghamshire, Oxfordshire and Berkshire West STP",Y59,E40000005,South East,136000,mgs,1723447,Population
-2022-03-31,Secondary Care,pembrolizumab,QUA,E54000016,The Black Country and West Birmingham STP,Y60,E40000008,Midlands,60300,mgs,1380809,Population
-2022-03-31,Secondary Care,pembrolizumab,QUE,E54000021,Cambridgeshire and Peterborough STP,Y61,E40000007,East of England,75200,mgs,896725,Population
-2022-03-31,Secondary Care,pembrolizumab,QUY,E54000039,"Bristol, North Somerset and South Gloucestershire STP",Y58,E40000006,South West,58600,mgs,969256,Population
-2022-03-31,Secondary Care,pembrolizumab,QVV,E54000041,Dorset STP,Y58,E40000006,South West,60400,mgs,776780,Population
-2022-03-31,Secondary Care,pembrolizumab,QWE,E54000031,South West London Health & Care Partnership STP,Y56,E40000003,London,24900,mgs,1509741,Population
-2022-03-31,Secondary Care,pembrolizumab,QWO,E54000054,West Yorkshire and Harrogate Health & Care Partnership STP,Y63,E40000009,North East and Yorkshire,177400,mgs,2396517,Population
-2022-03-31,Secondary Care,pembrolizumab,QWU,E54000018,Coventry and Warwickshire STP,Y60,E40000008,Midlands,57000,mgs,963173,Population
-2022-03-31,Secondary Care,pembrolizumab,QXU,E54000052,Surrey Heartlands Health & Care Partnership STP,Y59,E40000005,South East,104800,mgs,1052425,Population
-2022-03-31,Secondary Care,pembrolizumab,QYG,E54000008,Cheshire and Merseyside STP,Y62,E40000010,North West,429700,mgs,2503902,Population
 2022-03-31,Secondary Care,ribociclib,QE1,E54000048,Lancashire and South Cumbria ICS,Y62,E40000010,North West,989,ADD,1701655,Population
 2022-03-31,Secondary Care,ribociclib,QF7,E54000009,South Yorkshire and Bassetlaw STP,Y63,E40000009,North East and Yorkshire,1699,ADD,1533334,Population
 2022-03-31,Secondary Care,ribociclib,QGH,E54000019,Herefordshire and Worcestershire STP,Y60,E40000008,Midlands,19,ADD,791685,Population
@@ -1971,48 +1677,6 @@ date,data_source,treatment_name,stp_ods_cd,stp_gss_cd,stp_name,reg_ods_cd,reg_gs
 2022-06-30,Secondary Care,palbociclib,QWU,E54000018,Coventry and Warwickshire STP,Y60,E40000008,Midlands,6953,DDD,963173,Population
 2022-06-30,Secondary Care,palbociclib,QXU,E54000052,Surrey Heartlands Health & Care Partnership STP,Y59,E40000005,South East,11500,DDD,1052425,Population
 2022-06-30,Secondary Care,palbociclib,QYG,E54000008,Cheshire and Merseyside STP,Y62,E40000010,North West,6621,DDD,2503902,Population
-2022-06-30,Secondary Care,pembrolizumab,QE1,E54000048,Lancashire and South Cumbria ICS,Y62,E40000010,North West,160000,mgs,1701655,Population
-2022-06-30,Secondary Care,pembrolizumab,QF7,E54000009,South Yorkshire and Bassetlaw STP,Y63,E40000009,North East and Yorkshire,129200,mgs,1533334,Population
-2022-06-30,Secondary Care,pembrolizumab,QGH,E54000019,Herefordshire and Worcestershire STP,Y60,E40000008,Midlands,62800,mgs,791685,Population
-2022-06-30,Secondary Care,pembrolizumab,QH8,E54000026,Mid and South Essex STP,Y61,E40000007,East of England,136300,mgs,1199296,Population
-2022-06-30,Secondary Care,pembrolizumab,QHG,E54000024,"Bedfordshire, Luton and Milton Keynes STP",Y61,E40000007,East of England,43800,mgs,959098,Population
-2022-06-30,Secondary Care,pembrolizumab,QHL,E54000017,Birmingham and Solihull STP,Y60,E40000008,Midlands,179600,mgs,1179731,Population
-2022-06-30,Secondary Care,pembrolizumab,QHM,E54000050,Cumbria and North East STP,Y63,E40000009,North East and Yorkshire,236000,mgs,3000432,Population
-2022-06-30,Secondary Care,pembrolizumab,QJ2,E54000012,Joined Up Care Derbyshire STP,Y60,E40000008,Midlands,57600,mgs,1030393,Population
-2022-06-30,Secondary Care,pembrolizumab,QJG,E54000023,Suffolk and North East Essex ICS,Y61,E40000007,East of England,67400,mgs,987177,Population
-2022-06-30,Secondary Care,pembrolizumab,QJK,E54000037,Devon STP,Y58,E40000006,South West,194300,mgs,1209773,Population
-2022-06-30,Secondary Care,pembrolizumab,QJM,E54000013,Lincolnshire STP,Y60,E40000008,Midlands,65600,mgs,766333,Population
-2022-06-30,Secondary Care,pembrolizumab,QK1,E54000015,"Leicester, Leicestershire and Rutland STP",Y60,E40000008,Midlands,53600,mgs,1107597,Population
-2022-06-30,Secondary Care,pembrolizumab,QKK,E54000030,Our Healthier South East London STP,Y56,E40000003,London,120000,mgs,1818226,Population
-2022-06-30,Secondary Care,pembrolizumab,QKS,E54000032,Kent and Medway STP,Y59,E40000005,South East,181400,mgs,1868199,Population
-2022-06-30,Secondary Care,pembrolizumab,QM7,E54000025,Hertfordshire and West Essex STP,Y61,E40000007,East of England,109000,mgs,1488061,Population
-2022-06-30,Secondary Care,pembrolizumab,QMF,E54000029,East London Health & Care Partnership STP,Y56,E40000003,London,116200,mgs,2036470,Population
-2022-06-30,Secondary Care,pembrolizumab,QMJ,E54000028,North London Partners in Health & Care STP,Y56,E40000003,London,52200,mgs,1526582,Population
-2022-06-30,Secondary Care,pembrolizumab,QMM,E54000022,Norfolk and Waveney Health & Care Partnership STP,Y61,E40000007,East of England,75600,mgs,1032661,Population
-2022-06-30,Secondary Care,pembrolizumab,QNC,E54000010,Staffordshire & Stoke on Trent STP,Y60,E40000008,Midlands,65000,mgs,1139794,Population
-2022-06-30,Secondary Care,pembrolizumab,QNQ,E54000034,Frimley Health & Care STP,Y59,E40000005,South East,12400,mgs,746739,Population
-2022-06-30,Secondary Care,pembrolizumab,QNX,E54000053,Sussex Health and Care Partnership,Y59,E40000005,South East,76800,mgs,1711539,Population
-2022-06-30,Secondary Care,pembrolizumab,QOC,E54000011,Shropshire and Telford and Wrekin STP,Y60,E40000008,Midlands,19000,mgs,506737,Population
-2022-06-30,Secondary Care,pembrolizumab,QOP,E54000007,Greater Manchester Health & Social Care Partnership,Y62,E40000010,North West,184300,mgs,2881890,Population
-2022-06-30,Secondary Care,pembrolizumab,QOQ,E54000051,"Humber, Coast and Vale STP",Y63,E40000009,North East and Yorkshire,91000,mgs,1708723,Population
-2022-06-30,Secondary Care,pembrolizumab,QOX,E54000040,"Bath and North East Somerset, Swindon and Wiltshire STP",Y58,E40000006,South West,82375,mgs,929964,Population
-2022-06-30,Secondary Care,pembrolizumab,QPM,E54000020,Northamptonshire STP,Y60,E40000008,Midlands,43000,mgs,740111,Population
-2022-06-30,Secondary Care,pembrolizumab,QR1,E54000043,Gloucestershire STP,Y58,E40000006,South West,38600,mgs,640650,Population
-2022-06-30,Secondary Care,pembrolizumab,QRL,E54000042,Hampshire and the Isle of Wight STP,Y59,E40000005,South East,196480,mgs,1831473,Population
-2022-06-30,Secondary Care,pembrolizumab,QRV,E54000027,North West London Health & Care Partnership STP,Y56,E40000003,London,261500,mgs,2111469,Population
-2022-06-30,Secondary Care,pembrolizumab,QSL,E54000038,Somerset STP,Y58,E40000006,South West,63400,mgs,563851,Population
-2022-06-30,Secondary Care,pembrolizumab,QT1,E54000014,Nottingham and Nottinghamshire Health and Care STP,Y60,E40000008,Midlands,131300,mgs,1052195,Population
-2022-06-30,Secondary Care,pembrolizumab,QT6,E54000036,Cornwall and the Isles of Scilly Health & Social Care Partnership STP,Y58,E40000006,South West,110800,mgs,575525,Population
-2022-06-30,Secondary Care,pembrolizumab,QU9,E54000044,"Buckinghamshire, Oxfordshire and Berkshire West STP",Y59,E40000005,South East,124800,mgs,1723447,Population
-2022-06-30,Secondary Care,pembrolizumab,QUA,E54000016,The Black Country and West Birmingham STP,Y60,E40000008,Midlands,70200,mgs,1380809,Population
-2022-06-30,Secondary Care,pembrolizumab,QUE,E54000021,Cambridgeshire and Peterborough STP,Y61,E40000007,East of England,81300,mgs,896725,Population
-2022-06-30,Secondary Care,pembrolizumab,QUY,E54000039,"Bristol, North Somerset and South Gloucestershire STP",Y58,E40000006,South West,61800,mgs,969256,Population
-2022-06-30,Secondary Care,pembrolizumab,QVV,E54000041,Dorset STP,Y58,E40000006,South West,61100,mgs,776780,Population
-2022-06-30,Secondary Care,pembrolizumab,QWE,E54000031,South West London Health & Care Partnership STP,Y56,E40000003,London,28500,mgs,1509741,Population
-2022-06-30,Secondary Care,pembrolizumab,QWO,E54000054,West Yorkshire and Harrogate Health & Care Partnership STP,Y63,E40000009,North East and Yorkshire,181000,mgs,2396517,Population
-2022-06-30,Secondary Care,pembrolizumab,QWU,E54000018,Coventry and Warwickshire STP,Y60,E40000008,Midlands,53600,mgs,963173,Population
-2022-06-30,Secondary Care,pembrolizumab,QXU,E54000052,Surrey Heartlands Health & Care Partnership STP,Y59,E40000005,South East,115800,mgs,1052425,Population
-2022-06-30,Secondary Care,pembrolizumab,QYG,E54000008,Cheshire and Merseyside STP,Y62,E40000010,North West,339800,mgs,2503902,Population
 2022-06-30,Secondary Care,ribociclib,QE1,E54000048,Lancashire and South Cumbria ICS,Y62,E40000010,North West,747,ADD,1701655,Population
 2022-06-30,Secondary Care,ribociclib,QF7,E54000009,South Yorkshire and Bassetlaw STP,Y63,E40000009,North East and Yorkshire,2203,ADD,1533334,Population
 2022-06-30,Secondary Care,ribociclib,QGH,E54000019,Herefordshire and Worcestershire STP,Y60,E40000008,Midlands,19,ADD,791685,Population

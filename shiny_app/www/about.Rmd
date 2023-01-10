@@ -33,7 +33,7 @@ Include info on licencing and reuse of data
 
 ### Contact:
 
-Impact team, National Institute for Health and Care Excellence (NICE)
+Impact team, National Institute for Health and Care Excellence (NICE)  
 Email: impact@nice.org.uk
 
 

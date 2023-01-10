@@ -1,0 +1,77 @@
+---
+title: "Prototype measurement framework: Prescribing of Breast cancer medicines"
+author: "Impact team"
+output: 
+  html_document:
+    code_folding: hide
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(reactable)
+library(dplyr)
+```
+
+# Background
+
+Over the last 20 years NICE has recommended over a dozen medicines for the treatment of breast cancer. In this dashboard we look at the usage of seven of these medicines where the guidance was published in the last 5 years, and we have both primary and secondary care usage data. These medicines included are abemaciclib, neratinib, palbociclib, ribociclib , trastuzumab deruxtecan, trastuzumab emtansine and tucatinib. 
+
+Pembrolizumab does meet the criteria but is not included as it is widely used for treatments other than breast cancer and the usage data available is not split by indication. Breast cancer medicines eribulin, everolimus and pertuzumab are not included as the initial NICE technology appraisals are more than 5 years old and the usage data is no longer published. 
+
+# Methodology
+
+## Data source
+
+Medicines data is sourced from NHS Digitals [Innovation scorecard](https://digital.nhs.uk/data-and-information/publications/statistical/nice-technology-appraisals-in-the-nhs-in-england-innovation-scorecard), which in turn is taken from two sources:
+
+- **Primary care data** - English Prescribing Dataset (EPD) published by the NHS Business Services Authority
+- **Secondary Care data** - Secondary Care Medicines Data (SCMD) published by the NHS Business Services Authority 
+
+## Calculating dosage
+
+The usage data for each of the included medicines was supplied with differing units. This has been converted into a common unit here referred to as daily dose. A daily dose is an approximation of how much medicine 1 person receiving the treatment would receive in 1 day, where the treatment is assumed to be split evenly between days. The daily dose calculations for each medicine are detailed in the table below:
+
+<br>
+
+```{r dosage_table, echo=FALSE, message=TRUE, warning=TRUE, eval=TRUE}
+
+dosage_df <- readr::read_csv(here::here("data/clean/bc_dosage_calc_df.csv"),
+                             show_col_types = FALSE) %>% 
+    mutate(medicine = stringr::str_to_sentence(medicine))
+
+reactable(dosage_df,
+          filterable = FALSE,
+          searchable = FALSE,
+          highlight = TRUE,
+          striped = TRUE,
+          compact = TRUE,
+          bordered = TRUE,
+          style = list(fontSize = "14px"),
+          columns = list(
+              medicine = colDef(name = "Medicine"),
+              dosage_calc = colDef(name = "Dosage calculation",
+                                  minWidth = 400)))
+
+```
+<br>
+
+## Calculating the eligible population
+
+For two medicines, abemaciclib and neratinib, it was possible to calculate an expected usage based on an estimate of the treatment population. This allows the comparison of expected usage of NICE recommended medicines to the actual volume of medicines used in the NHS in England.
+
+Further information on how the eligible population was calculated can be found in the medicines data section, in the eligible population tab.
+
+## Limitations and assumptions 
+
+In interpreting estimated usage figures, it is important to note that the expected and observed use may differ for a variety of reasons and they should not be assumed to definitely indicate either ‘under’ or ‘over’ prescribing. Potential explanations for variation between actual and expected volumes include:
+
+- Clinical judgement and patient choice
+- The availability of alternative treatment options that have not been appraised by NICE
+- Changes in prevalence or incidence
+- The time taken for the population to present to services
+- Assumptions about the average length of treatment used to develop predictions of use
+- Known gaps in the medicine utilisation data, such as supplies made directly to patients via the homecare route or by outsourced dispensing

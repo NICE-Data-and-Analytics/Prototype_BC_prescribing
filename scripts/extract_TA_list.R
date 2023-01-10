@@ -44,7 +44,7 @@ ta_df <- xml_guideline %>%
 
 # Filter for our medicines ------------------------------------------------
 
-meds_regex <- "[Aa]bemaciclib|[Nn]eratinib|[Pp]embrolizumab|[Pp]albociclib|[Rr]ibociclib|[Tt]rastuzumab|[Tt]ucatinib"
+meds_regex <- "[Aa]bemaciclib|[Nn]eratinib|[Pp]albociclib|[Rr]ibociclib|[Tt]rastuzumab|[Tt]ucatinib"
 
 ta_for_api <- ta_df %>% 
     filter(stringr::str_detect(guidance_title, meds_regex)) %>% 
@@ -93,4 +93,4 @@ ta_output_df <- async_out %>%
     mutate(pub_date = lubridate::as_date(pub_date),
            mod_date = lubridate::as_date(mod_date))
 
-#readr::write_csv(ta_output_df, "data/clean/med_TA_list.csv")
+#readr::write_csv(ta_output_df, here::here("data/clean/med_TA_list.csv"))
