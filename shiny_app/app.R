@@ -58,7 +58,14 @@ ui <- dashboardPage(skin = "yellow",
                                                "Select medicine",
                                                choices = setNames(
                                                    unique(nat_meds_df$treatment_name),
-                                                   stringr::str_to_title(unique(nat_meds_df$treatment_name))))
+                                                   stringr::str_to_title(unique(nat_meds_df$treatment_name)
+                                                                         )
+                                                   )
+                                               ),
+                                   conditionalPanel("input.meds_tabs == 'data_tab'",
+                                                    hr(),
+                                                    downloadButton("download_data_csv", "Download data", 
+                                                                   style = "position:relative; left:calc(10%);"))
                                    )
                             )
                         )
@@ -100,9 +107,10 @@ server <- function(input, output) {
 
     output$tabs_ui <- renderUI({
         
-        tabsetPanel(
+        tabsetPanel(id = "meds_tabs",
             
             tabPanel("Observed Usage",
+                     value = "usage_tab",
                      fluidRow(
                          fixedRow(1),
                          column(width = 7,
@@ -120,22 +128,24 @@ server <- function(input, output) {
             ),
             
             tabPanel("Underlying Data",
+                     value = "data_tab",
                      br(),
                      column(width = 8,
-                     box(width = NULL, title = "", solidHeader = TRUE,
+                     box(width = NULL, title = "Data", solidHeader = TRUE,
                          reactableOutput("data_table")))),
             
             
             if (input$medicine %in% c("abemaciclib", "neratinib")){
                 
                 tabPanel("Eligible population",
+                         value = "pop_tab",
                          br(),
                          fluidRow(
                              column(width = 4, 
                                     box(width = NULL, title = "Estimated treatment population", solidHeader = TRUE,
                                         htmlOutput("estimate_text"))),
                              column(width = 8,
-                                    box(width = NULL, title = "", solidHeader = TRUE,
+                                    box(width = NULL, title = "Estimate calculations", solidHeader = TRUE,
                                         reactableOutput("estimate_table")))
                          )
                 )
