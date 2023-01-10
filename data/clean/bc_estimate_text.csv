@@ -1,0 +1,11 @@
+﻿medicine,text,people_qtr
+abemaciclib,"Around 2,200 people are expected to receive treatment with abemaciclib in England annually. 
+
+This estimate of the treatment population is taken from the Resource Impact Template developed for the NICE technology appraisal ‘Abemaciclib with endocrine therapy for adjuvant treatment of hormone receptor-positive, HER2-negative, node-positive early breast cancer at high risk of recurrence’, published July 2022 and 'Abemaciclib with fulvestrant for treating hormone receptor-positive, HER2-negative advanced breast cancer after endocrine therapy' published September 2021. The observed usage has been taken from the innovation scorecard. 
+
+The supplied unit was average daily dose (ADD), it is assumed here that 1 daily dose equals 1 ADD. The number of daily doses in a year was divided by 365 for the number of people. ",558
+neratinib,"Around 400 people are expected to receive treatment with neratinib in England annually. 
+
+This estimate of the treatment population is taken from the Resource Impact Template developed for the NICE technology appraisal 'Neratinib for extended adjuvant treatment of hormone receptor-positive, HER2-positive early stage breast cancer after adjuvant trastuzumab', published November 2019. The observed usage has been taken from the Innovation Scorecard. 
+
+The supplied unit was milligrams, based on the WHO Defined Daily Dose (DDD), 1 daily dose equals 240mg. The number of daily doses in a year was divided by 365 for the number of people. ",100

@@ -35,7 +35,9 @@ create_data_table <- function(med_df, medicine){
             filterable = FALSE,
             searchable = FALSE,
             highlight = TRUE,
-            defaultPageSize = 20,
+            striped = TRUE,
+            compact = TRUE,
+            defaultPageSize = 15,
             style = list(fontSize = "14px"),
             defaultColDef = colDef(
                 format = colFormat(separators = TRUE)))
@@ -54,6 +56,8 @@ create_med_TA_table <- function(meds_ta_df, medicine){
             filterable = FALSE,
             searchable = FALSE,
             highlight = TRUE,
+            striped = TRUE,
+            compact = TRUE,
             style = list(fontSize = "14px"),
             columns = list(
                 guidance_no = colDef(name = "Guidance number"),
@@ -61,6 +65,32 @@ create_med_TA_table <- function(meds_ta_df, medicine){
                                minWidth = 400),
                 pub_date = colDef(name = "Publication date")
             ))
+    
+    return(temp)
+}
+
+# Create a reactable table for estimates
+create_estimate_table <- function(estimate_table_df, medicine){
+    
+    med_reg <- med_regex(medicine)
+    
+    temp <- estimate_table_df %>% 
+        filter(stringr::str_detect(medicine, med_reg)) %>% 
+        select(-medicine) %>% 
+        reactable(filterable = FALSE,
+                  searchable = FALSE,
+                  highlight = TRUE,
+                  striped = TRUE,
+                  compact = TRUE,
+                  defaultPageSize = 20,
+                  style = list(fontSize = "14px"),
+                  columns = list(
+                      estimate = colDef(name = "Estimate of treatment population",
+                                        minWidth = 400),
+                      percentage = colDef(name = "Percentage of people",
+                                          format = colFormat(percent = TRUE, digits = 2)),
+                      people = colDef(name = "Number of people",
+                                      format = colFormat(separators = TRUE, digits = 0))))
     
     return(temp)
 }
@@ -86,6 +116,25 @@ define_vline <- function(input_date){
     return(temp)
 }
 
+# Define a horizontal line for a plotly chart (e.g. estimated treatment population)
+define_hline <- function(y_value){
+    
+    temp <- list(type = "line",
+                 fillcolor = "black",
+                 line = list(color = "black",
+                             #dash = "dot",
+                             width = 2.5),
+                 opacity = 0.5,
+                 x0 = 0,
+                 x1 = 1,
+                 xref = "paper",
+                 y0 = y_value,
+                 y1 = y_value,
+                 yref = "y")
+    return(temp)
+}
+
+
 # Function to label a vertical line on a plotly chart, 
 # yheight variable allows for adjusting of overlapping labels
 label_vline <- function(fig, input_date, label, yheight = 1.01){
@@ -104,11 +153,26 @@ label_vline <- function(fig, input_date, label, yheight = 1.01){
     return(temp)
 }
 
+# Function to label a vertical line on a plotly chart, 
+label_hline <- function(fig, y_value, label){
+    
+    temp <- fig %>% 
+        add_annotations(y = y_value,
+                        x = 0.1,
+                        xref = "paper",
+                        yref = "y",
+                        text = label,
+                        showarrow = FALSE,
+                        xanchor = "center",
+                        font = list(color = "#000000",
+                                    font = "Arial",
+                                    size = 12))
+    return(temp)
+}
+
 
 # Create a chart showing usage of a single medicine
-
 single_med_plot <- function(nat_meds_df, medicine, plot_title, ylabel){
-    
     
     tmp_df <- nat_meds_df %>% 
         filter(treatment_name == medicine) %>% 
@@ -143,13 +207,14 @@ single_med_plot <- function(nat_meds_df, medicine, plot_title, ylabel){
 
 # Function to add vertical lines to plot (e.g. TA publication dates)
 
-add_TA_lines <- function(plot, meds_ta_df, nat_meds_df, medicine){
+add_TA_lines <- function(plot, meds_ta_df, nat_meds_df, estimate_text_df, med_input){
+    
+    med_reg <- med_regex(med_input)
     
     # Filter for TAs within the range of our data -----------------------------
     
-    med_reg <- med_regex(medicine)
-    
-    tmp_df <- nat_meds_df %>% filter(treatment_name == medicine)
+    tmp_df <- nat_meds_df %>% 
+        filter(stringr::str_detect(treatment_name, med_reg))
     
     min_date <- min(tmp_df$date)
     max_date <- max(tmp_df$date)
@@ -158,23 +223,44 @@ add_TA_lines <- function(plot, meds_ta_df, nat_meds_df, medicine){
         filter(stringr::str_detect(title, med_reg),
                between(pub_date, as.Date(min_date), as.Date(max_date)))
     
-    # Add lines to plot -------------------------------------------------------
-    
-    line_dates <- tmp_ta_df %>% pull(pub_date)
+    ta_dates <- tmp_ta_df %>% pull(pub_date)
     
     line_labels <- tmp_ta_df %>% pull(guidance_no)
     
-    line_list <- purrr::map(line_dates, define_vline)
+    line_list <- purrr::map(ta_dates, define_vline)
+    
+    # Determine whether to include estimate -----------------------------------
+    if (sum(stringr::str_detect(unique(estimate_text_df$medicine), med_reg)) > 0) {
+
+        temp_df <- estimate_text_df %>%
+            filter(stringr::str_detect(medicine, med_reg))
+
+        estimate <- temp_df[,"people_qtr"] %>%
+            pull() %>%
+            define_hline() %>% 
+            list()
+
+        line_list <- c(line_list, estimate)
+    }
+    
+    # Add lines to plot -------------------------------------------------------
     
     plot <- plot %>% 
         layout (shapes = line_list)
     
-    for (i in seq_along(line_dates)){
-        plot <- plot %>% label_vline(line_dates[i], line_labels[i])
+    for (i in seq_along(ta_dates)){
+        
+        plot <- plot %>% label_vline(ta_dates[i], line_labels[i])
+    }
+    
+    if (sum(stringr::str_detect(unique(estimate_text_df$medicine), med_reg)) > 0){
+        
+        plot <- plot %>% label_hline(pull(temp_df[,"people_qtr"])*1.08, "Expected usage")
     }
     
     return(plot)
 }
+
 
 # Shiny plot --------------------------------------------------------------
 
@@ -233,4 +319,18 @@ write_indication_text <- function(indications_df, medicine){
     return(indication_text)
 }
 
+
+# Estimate text -----------------------------------------------------------
+
+write_estimate_text <- function(estimate_text_df, medicine){
+    
+    med_reg <- med_regex(medicine)
+    
+    temp_df <- estimate_text_df %>% 
+        filter(stringr::str_detect(medicine, med_reg))
+    
+    estimate_text <- temp_df[,"text"] %>% pull()
+    
+    return(estimate_text)
+}
 
