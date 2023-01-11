@@ -186,8 +186,6 @@ create_med_table(meds_ta_df, "neratinib")
 
 ### Therapeutic indications  
 
-#### Early Breast Cancer
-
 Neratinib (brand name Nerlynx) is indicated for the extended adjuvant treatment of adult patients with early-stage hormone receptor positive HER2-overexpressed/amplified breast cancer and who completed adjuvant trastuzumab-based therapy less than one year ago.
 
 &nbsp;  
