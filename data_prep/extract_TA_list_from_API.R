@@ -93,4 +93,4 @@ ta_output_df <- async_out %>%
     mutate(pub_date = lubridate::as_date(pub_date),
            mod_date = lubridate::as_date(mod_date))
 
-#readr::write_csv(ta_output_df, here::here("data/med_TA_list.csv"))
+#readr::write_csv(ta_output_df, here::here("data/bc_med_tas_df.csv"))

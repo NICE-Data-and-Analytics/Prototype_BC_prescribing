@@ -12,9 +12,13 @@ library(plotly)
 
 # Source in other files ---------------------------------------------------
 
-source(here::here("R/rmd_functions.R"))
+# Functions to make outputs
+source(here::here("R/helper_functions.R"))
+source(here::here("R/chart_functions.R"))
+source(here::here("R/table_functions.R"))
+source(here::here("R/text_functions.R"))
 
-# Load in TA table
+# Load in table containing info on TAs
 meds_ta_df <- readr::read_csv(here::here("data/bc_med_tas_df.csv"), 
                               col_select = 1:3)
 
