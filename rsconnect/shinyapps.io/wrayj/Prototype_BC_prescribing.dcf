@@ -1,0 +1,14 @@
+name: Prototype_BC_prescribing
+title: Prototype_BC_prescribing
+username:
+account: wrayj
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8010661
+bundleId: 6720747
+url: https://wrayj.shinyapps.io/Prototype_BC_prescribing/
+when: 1673430111.65179
+lastSyncTime: 1673430111.65179
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .Renviron|data_prep/example_charts.R|data_prep/extract_and_clean_isc_data.R|data_prep/extract_TA_list.R|notebooks/ISCpresc.html|notebooks/ISCpresc.rmd|R/.Rhistory|README.md

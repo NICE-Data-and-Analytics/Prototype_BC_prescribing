@@ -1,0 +1,47 @@
+---
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Last updated
+
+This app was last updated on 10th January 2023
+
+
+### How to use this dashboard
+
+This dashboard has been produced as a prototype for the NICE automated measurement framework. The underlying data on breast cancer medicine usage has been taken from NHS Digital's [Innovation Scorecard](https://digital.nhs.uk/data-and-information/publications/statistical/nice-technology-appraisals-in-the-nhs-in-england-innovation-scorecard), which reports on the usage of medicines in England that have been positively appraised by NICE. 
+
+Users can navigate the app using the sidebar, which can also be collapsed by clicking the menu symbol in the top navigation bar. The sidebard contains several sections:
+
+The **Background** section contains contextualizing and methodological information
+
+The **Medicines data** section allows users to explore the data for individual breast cancer medicines by selecting the medicine of interest in the sidebar. This section has several tabs:
+
+- **Usage data** - provides information on medicine usage, therapeutic indications and relevant NICE technological appraisals (TAs). 
+- **Underlying data** - explore and download the underlying data used to produce the usage chart
+- **Eligible population** - provides information on how the eligible treatment population was calculated (only available for abemaciclib and neratinib).
+
+
+### Licencing
+
+Include info on licencing and reuse of data
+
+
+### Contact:
+
+Impact team, National Institute for Health and Care Excellence (NICE)  
+Email: impact@nice.org.uk
+
+
+### Code
+
+The code used to build this dashboard is available on [GitHub]()
+
+
+### References:
+
+Include bibliography

@@ -1,0 +1,26 @@
+medicine,estimate,percentage,people
+abemaciclib,Adult population,,"44,456,850"
+abemaciclib,Adult population forecast at 2026/27,,"46,263,200"
+abemaciclib,Incidence of breast cancer,0.001088336,"50,350"
+abemaciclib,Proportion of people with early or locally advanced disease,0.871,"43,855"
+abemaciclib,"Proportion of people with hormone receptor positive, HER2 negative disease",0.645,"28,286"
+abemaciclib,Proportion of people with high-risk disease,0.25,"7,072"
+abemaciclib,Eligible population at high risk of recurrence,0.574,"4,059"
+abemaciclib,Treatment population- People who choose abemaciclib with endocrine therapy (year 5 - 2027),0.55,"2,232"
+neratinib,Adult population,,43752473
+neratinib,Incidence of breast cancer in England,0.001046569,45790
+neratinib,Proportion of women with invasive disease,0.8,36632
+neratinib,"Proportion of women with early breast cancer (stage I, II or III) on diagnosis",0.94,34434.08
+neratinib,Proportion of women who will survive to disease progression,0.7,24103.856
+neratinib,Proportion of women who have surgery,0.81,19524.12336
+neratinib,Proportion of women who are tested for human epidermal growth factor receptor 2 (HER2),0.92,17962.19349
+neratinib,Proportion of women who have HER2 positive (HER2+) disease,0.15,2694.329024
+neratinib,Proportion of women who have HER2+ and hormone receptor positive (HR+) disease,0.66,1778.257156
+neratinib,Proportion of women who have lymph node negative disease,0.31,551.2597182
+neratinib,Proportion of women with lymph node negative disease who have trastuzumab in the adjuvant setting,1,551.2597182
+neratinib,Proportion of women who have lymph node positive disease,0.69,1226.997437
+neratinib,Proportion of women with node positive disease who have pertuzumab in the adjuvant setting,0.95,1165.647566
+neratinib,Proportion of women with node positive disease who have trastuzumab in the adjuvant setting,0.05,61.34987187
+neratinib,Total number of women who have trastuzumab in the adjuvant setting,,612.6095901
+neratinib,Proportion of women who complete a full course of adjuvant trastuzumab and are elligible for neratinib maintenance therapy,0.812,497.4389872
+neratinib,Proportion of people will receive treatment with neratinib from year 3 onwards (2022) once uptake has reached 80%.,0.8,397.9511897
