@@ -19,7 +19,7 @@ stp_meds_df <- readr::read_csv(unz(temp, "nice-tech-apps-eng-oct22-STP-Utilisati
 # Read in STP to region lookup file downloaded from ONS Open Geography Portal. This will map STPs to regions.
 # This is also useful because it gives us the GSS code column which we can use to join to ONS shape files 
 # if we want to make heatmaps
-stp_to_reg_lookup <- readr::read_csv(here::here("data/raw/STP21_NHSER21_EN_LU.csv"), 
+stp_to_reg_lookup <- readr::read_csv(here::here("data/STP21_NHSER21_EN_LU.csv"), 
                                      col_names = c("stp_gss_cd", "stp_ods_cd", "stp_name", 
                                                    "reg_gss_cd", "reg_ods_cd", "reg_name")) %>% 
     select(-stp_name)
@@ -67,7 +67,7 @@ nat_meds_df <- nat_meds_df %>%
             TRUE ~ numerator_unit),
         numerator = round(numerator, 0))
 
-#readr::write_csv(nat_meds_df, here::here("data/clean/bc_meds_nat_2022_10.csv"))
+#readr::write_csv(nat_meds_df, here::here("data/bc_meds_nat_2022_10.csv"))
 
 # Wrangle STP data -----------------------------------------------------------
 
@@ -119,4 +119,4 @@ stp_meds_df <- stp_meds_df %>%
             TRUE ~ numerator_unit),
         numerator = round(numerator, 0))
 
-#readr::write_csv(stp_meds_df, here::here("data/clean/bc_meds_stp_2022_10.csv"))
+#readr::write_csv(stp_meds_df, here::here("data/bc_meds_stp_2022_10.csv"))

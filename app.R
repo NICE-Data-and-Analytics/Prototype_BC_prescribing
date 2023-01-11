@@ -12,23 +12,23 @@ library(plotly)
 
 # Source in other files ---------------------------------------------------
 
-source(here::here("scripts/rmd_functions.R"))
+source(here::here("R/rmd_functions.R"))
 
 # Load in TA table
-meds_ta_df <- readr::read_csv(here::here("data/clean/bc_med_tas_df.csv"), 
+meds_ta_df <- readr::read_csv(here::here("data/bc_med_tas_df.csv"), 
                               col_select = 1:3)
 
 # Load in national level data
-nat_meds_df <- readr::read_csv(here::here("data/clean/bc_meds_nat_2022_10.csv"))
+nat_meds_df <- readr::read_csv(here::here("data/bc_meds_nat_2022_10.csv"))
 
 # Load in indications info
-indications_df <- readr::read_csv(here::here("data/clean/bc_med_emc_indications.csv"))
+indications_df <- readr::read_csv(here::here("data/bc_med_emc_indications.csv"))
 
 # Load in estimate text
-estimate_text_df <- readr::read_csv(here::here("data/clean/bc_estimate_text.csv"))
+estimate_text_df <- readr::read_csv(here::here("data/bc_estimate_text.csv"))
 
 # Load in estimate tables
-estimate_table_df <- readr::read_csv(here::here("data/clean/bc_estimate_tables.csv"))
+estimate_table_df <- readr::read_csv(here::here("data/bc_estimate_tables.csv"))
 
 # App ---------------------------------------------------------------------
 

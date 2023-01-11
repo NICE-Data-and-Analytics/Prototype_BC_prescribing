@@ -6,9 +6,9 @@ library(plotly)
 
 # Load data ---------------------------------------------------------------
 
-nat_meds_df <- readr::read_csv("data/clean/bc_meds_nat_2022_10.csv")
-stp_meds_df <- readr::read_csv("data/clean/bc_meds_stp_2022_10.csv")
-meds_ta_df <- readr::read_csv("data/clean/meds_ta_df.csv")
+nat_meds_df <- readr::read_csv(here::here("data/bc_meds_nat_2022_10.csv"))
+stp_meds_df <- readr::read_csv(here::here("data/bc_meds_stp_2022_10.csv"))
+meds_ta_df <- readr::read_csv(here::here("data/bc_med_tas_df.csv"))
 
 
 # Functions for lines ------------------------------------------------------
